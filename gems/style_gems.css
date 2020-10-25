@@ -1,6 +1,6 @@
 body{
-    background-color: #ebecf0;
-    color: #6f2da8;
+    background-color: #116466;
+    color: #FFCB9A;
     margin: 0;
     padding: 0;
     border: 0;
@@ -143,16 +143,16 @@ body{
     #main-header h3{
         margin: 0px;
         margin-bottom: 5px;
-        color: #a597b1;
+        color: #D9B08C;
     }
 
 .nav{
-    background-color: #6f2da8;
+    background-color: #2C3531;
 }
 
     .nav ul{
         list-style: none;
-        background: #6f2da8;
+        background: #2C3531;
         color: #ebecf0;
         text-align: center;
         padding: 0;
@@ -165,7 +165,7 @@ body{
 
     .nav a{
         text-decoration: none;
-        color: #f4f4f4;
+        color: #116466;
         width: 100px;
         display: block;
         padding: 15px;
@@ -184,20 +184,7 @@ body{
 #main-footer{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    color: #f4f4f4;
-    background-color: #6f2da8;
+    color: #2C3531;
+    background-color: #116466;
     text-align: center;
 }
-
-#random{
-    text-align: center;
-}
-
-    #random a{
-        text-decoration: none;
-        color: #6f2da8;
-    }
-
-    #random a:visited{
-        color: #6f2da8;
-    }
