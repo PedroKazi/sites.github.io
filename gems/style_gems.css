@@ -188,3 +188,16 @@ body{
     background-color: #6f2da8;
     text-align: center;
 }
+
+#random{
+    text-align: center;
+}
+
+    #random a{
+        text-decoration: none;
+        color: #6f2da8;
+    }
+
+    #random a:visited{
+        color: #6f2da8;
+    }
