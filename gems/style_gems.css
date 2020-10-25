@@ -173,3 +173,18 @@ body{
         font-family: pir;
         transition: 0.4s;
     }
+
+@media (max-width: 880px){
+    .nav a{
+        padding: 5px;
+        width: 50px;
+    }
+}
+
+#main-footer{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #f4f4f4;
+    background-color: #6f2da8;
+    text-align: center;
+}
