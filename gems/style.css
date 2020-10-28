@@ -223,7 +223,7 @@ body a{
     content: attr(data-hover);
     font-size: 24px;
     line-height: 28px;
-    color: #000000;
+    color: #FFCB9A;
 }
 
 .box_item div{
