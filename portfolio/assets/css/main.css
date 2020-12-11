@@ -4687,3 +4687,7 @@ input, select, textarea {
 		}
 
 	}
+
+#foto_perfil{
+	border-radius: 50%;
+}
