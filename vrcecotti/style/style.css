@@ -33,56 +33,6 @@ body {
   background-image: url(../img/bg.jpg);
 }
 
-body .mainpg {
-  width: 70vw;
-  background-color: #007ca8;
-  text-align: center;
-  border: solid #242424 5px;
-}
-
-body .mainpg div {
-  width: 40%;
-  margin: 5% auto;
-}
-
-body .mainpg div img {
-  width: 100%;
-}
-
-body .mainpg .button {
-  width: 90%;
-  background-color: #0a5fbf;
-  padding: 5% 0;
-  border: solid #092DB5 3px;
-}
-
-body .mainpg .button a {
-  color: #242424;
-  font-family: PierSans, sans-serif;
-  font-weight: bold;
-  font-size: 1em;
-  text-decoration: none;
-}
-
-body .mainpg .button a :visited {
-  color: #242424;
-}
-
-body .mainpg p {
-  font-family: PierSans, sans-serif;
-  font-weight: bold;
-  font-size: 1em;
-  color: #242424;
-  margin: 0;
-}
-
-body .mainpg::after {
-  content: '';
-  display: block;
-  padding-bottom: 5%;
-  max-height: 95%;
-}
-
 body .center {
   margin: 0;
   position: absolute;
@@ -92,50 +42,171 @@ body .center {
           transform: translate(-50%, -50%);
 }
 
+body .big_sqr {
+  width: 70vw;
+  background-color: #007ca8;
+  text-align: center;
+  border: solid #242424 5px;
+}
+
+body .big_sqr div {
+  width: 40%;
+  margin: 5% auto;
+}
+
+body .big_sqr div img {
+  width: 100%;
+}
+
+body .big_sqr .button {
+  width: 90%;
+  background-color: #0a5fbf;
+  padding: 5% 0;
+  border: solid #092DB5 3px;
+}
+
+body .big_sqr .button a {
+  color: #242424;
+  font-family: PierSans, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+body .big_sqr .button a :visited {
+  color: #242424;
+}
+
+body .big_sqr p {
+  font-family: PierSans, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: #242424;
+  margin: 0;
+}
+
+body .big_sqr::after {
+  content: '';
+  display: block;
+  padding-bottom: 5%;
+  max-height: 95%;
+}
+
+body .container {
+  width: 100vw;
+  text-align: center;
+}
+
+body .container .small_sqr {
+  background-color: #007ca8;
+  width: 55%;
+  margin: 20% auto;
+  border: solid #242424 5px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+body .container .small_sqr .wrapper {
+  width: 70%;
+  margin: 10px auto;
+}
+
+body .container .small_sqr .wrapper img {
+  width: 100%;
+}
+
+body .container .small_sqr h1 {
+  margin: 0;
+  font-family: PierSans, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #f8f8f8;
+}
+
+body .container .small_sqr a {
+  text-decoration: none;
+}
+
+body .container .small_sqr::after {
+  content: '';
+  display: block;
+  padding-bottom: 0%;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  body .mainpg p {
+  body .big_sqr p {
     font-size: 2em;
   }
-  body .mainpg .button {
+  body .big_sqr .button {
     border-width: 7px;
   }
-  body .mainpg .button a {
+  body .big_sqr .button a {
     font-size: 2em;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  body .mainpg {
-    width: 40vw;
-  }
-  body .mainpg p {
-    font-size: 2.5em;
-  }
-  body .mainpg .button a {
-    font-size: 2.5em;
+@media only screen and (min-width: 992px) {
+  body .container .small_sqr h1 {
+    font-size: 2em;
   }
 }
 
-@media only screen and (min-width: 2000px) {
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  body .big_sqr {
+    width: 40vw;
+  }
+  body .big_sqr p {
+    font-size: 2.5em;
+  }
+  body .big_sqr .button a {
+    font-size: 2.5em;
+  }
+  body .container .small_sqr {
+    border-width: 8px;
+  }
+  body .container .small_sqr h1 {
+    padding: 5% 0;
+    font-size: 3em;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
   body {
     background-size: cover;
   }
-  body .mainpg {
+  body .big_sqr {
     width: 40vw;
     border-width: 7px;
   }
-  body .mainpg p {
+  body .big_sqr p {
     font-size: 3em;
   }
-  body .mainpg .button {
+  body .big_sqr .button {
     border-width: 10px;
   }
-  body .mainpg .button a {
+  body .big_sqr .button a {
     font-size: 3em;
+  }
+  body .container .small_sqr {
+    border-width: 15px;
+  }
+  body .container .small_sqr h1 {
+    font-size: 5em;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  body .container .small_sqr {
+    display: inline-block;
+    width: 30%;
+    margin: auto 5%;
+  }
+  body .big_sqr {
+    width: 40vw;
   }
 }
 
