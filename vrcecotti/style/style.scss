@@ -1,0 +1,164 @@
+@font-face {
+    font-family: PierSans;
+    font-weight: normal;
+    font-style: normal;
+    src: url(../fonts/PPPierSans-Regular.otf);
+}
+@font-face {
+    font-family: PierSans;
+    font-weight: bold;
+    font-style: normal;
+    src: url(../fonts/PPPierSans-Bold.otf);
+}
+@font-face {
+    font-family: PierSans;
+    font-weight: normal;
+    font-style: italic;
+    src: url(../fonts/PPPierSans-Italic.otf);
+}
+@font-face {
+    font-family: PierSans;
+    font-weight: bold;
+    font-style: italic;
+    src: url(../fonts/PPPierSans-BoldItalic.otf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+    background-image: url(../img/bg.jpg);
+
+    .mainpg{
+        width: 70vw;
+        background-color: #007ca8;
+        text-align: center;
+        border: solid #242424 5px;
+
+        div{
+            width: 40%;
+            margin: 5% auto;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .button{
+            width: 90%;
+            background-color: rgb(10, 95, 191);
+            padding: 5% 0;
+            border: solid #092DB5 3px;
+
+            a{
+                color: #242424;
+                font-family: PierSans, sans-serif;
+                font-weight: bold;
+                font-size: 1em;
+                text-decoration: none;
+
+                :visited{
+                    color: #242424;
+                }
+            }
+        }
+
+        p{
+            font-family: PierSans, sans-serif;
+            font-weight: bold;
+            font-size: 1em;
+            color: #242424;
+            margin: 0;
+        }
+    }
+    .mainpg::after{
+        content: '';
+        display: block;
+        padding-bottom: 5%;
+    }
+
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        .mainpg{
+            p{
+                font-size: 2em;
+            }
+            .button{
+                border-width: 7px;
+                a{
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+
+        .mainpg{
+            width: 40vw;
+
+            p{
+                font-size: 2.5em;
+            }
+
+            .button{
+                a{
+                    font-size: 2.5em;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    body{
+
+        background-size: cover;
+
+        .mainpg{
+            width: 40vw;
+            border-width: 7px;
+
+            p{
+                font-size: 3em;
+            }
+
+            .button{
+                border-width: 10px;
+                a{
+                    font-size: 3em;
+                }
+            }
+        }
+    }
+}
+
+img{
+    max-width: 100%;
+}
