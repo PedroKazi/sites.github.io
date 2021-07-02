@@ -80,6 +80,7 @@ body .mainpg::after {
   content: '';
   display: block;
   padding-bottom: 5%;
+  max-height: 95%;
 }
 
 body .center {
