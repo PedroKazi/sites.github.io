@@ -79,6 +79,25 @@ body{
             color: #242424;
             margin: 0;
         }
+
+        input[type=text], input[type=password]{
+            width: 90%;
+            border: none;
+            padding: 3% 0;
+            margin-bottom: 10px;
+            font-family: sans-serif;
+        }
+
+        button{
+            width: 90%;
+            padding: 3% 0;
+            background-color: #092DB5;
+            border: none;
+            font-family: PierSans, sans-serif;
+            color: #f8f8f8;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
     }
     .big_sqr::after{
         content: '';
@@ -124,6 +143,27 @@ body{
             padding-bottom: 0%;
         }
     }
+
+    .circle{
+        width: 80%;
+        padding: 5%;
+        background: rgb(9,91,120);
+        background: linear-gradient(0deg, rgba(9,91,120,1) 30%, rgba(0,124,168,1) 60%);
+        border: solid #242424 5px;
+        border-radius: 50%;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    #empresa_icon{
+        padding: 10%;
+    }
+
+    .roundC{
+        border-radius: 50px;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -143,6 +183,14 @@ body{
                 a{
                     font-size: 2em;
                 }
+            }
+
+            input[type=text], input[type=password]{
+                font-size: 1.5em;
+            }
+    
+            button{
+                font-size: 1.5em;
             }
         }
     }
@@ -177,6 +225,14 @@ body{
                     font-size: 2.5em;
                 }
             }
+
+            input[type=text], input[type=password]{
+                font-size: 2em;
+            }
+    
+            button{
+                font-size: 2em;
+            }
         }
 
         .container{
@@ -210,6 +266,14 @@ body{
                 a{
                     font-size: 3em;
                 }
+            }
+
+            input[type=text], input[type=password]{
+                font-size: 2.5em;
+            }
+    
+            button{
+                font-size: 2.5em;
             }
         }
 

@@ -85,6 +85,25 @@ body .big_sqr p {
   margin: 0;
 }
 
+body .big_sqr input[type=text], body .big_sqr input[type=password] {
+  width: 90%;
+  border: none;
+  padding: 3% 0;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+body .big_sqr button {
+  width: 90%;
+  padding: 3% 0;
+  background-color: #092DB5;
+  border: none;
+  font-family: PierSans, sans-serif;
+  color: #f8f8f8;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
 body .big_sqr::after {
   content: '';
   display: block;
@@ -133,6 +152,28 @@ body .container .small_sqr::after {
   padding-bottom: 0%;
 }
 
+body .circle {
+  width: 80%;
+  padding: 5%;
+  background: #095b78;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #095b78), color-stop(60%, #007ca8));
+  background: linear-gradient(0deg, #095b78 30%, #007ca8 60%);
+  border: solid #242424 5px;
+  border-radius: 50%;
+}
+
+body .circle img {
+  width: 100%;
+}
+
+body #empresa_icon {
+  padding: 10%;
+}
+
+body .roundC {
+  border-radius: 50px;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -144,6 +185,12 @@ body .container .small_sqr::after {
   }
   body .big_sqr .button a {
     font-size: 2em;
+  }
+  body .big_sqr input[type=text], body .big_sqr input[type=password] {
+    font-size: 1.5em;
+  }
+  body .big_sqr button {
+    font-size: 1.5em;
   }
 }
 
@@ -164,6 +211,12 @@ body .container .small_sqr::after {
   }
   body .big_sqr .button a {
     font-size: 2.5em;
+  }
+  body .big_sqr input[type=text], body .big_sqr input[type=password] {
+    font-size: 2em;
+  }
+  body .big_sqr button {
+    font-size: 2em;
   }
   body .container .small_sqr {
     border-width: 8px;
@@ -190,6 +243,12 @@ body .container .small_sqr::after {
   }
   body .big_sqr .button a {
     font-size: 3em;
+  }
+  body .big_sqr input[type=text], body .big_sqr input[type=password] {
+    font-size: 2.5em;
+  }
+  body .big_sqr button {
+    font-size: 2.5em;
   }
   body .container .small_sqr {
     border-width: 15px;
