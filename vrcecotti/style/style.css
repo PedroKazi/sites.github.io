@@ -210,6 +210,12 @@ body .container .small_sqr::after {
   }
 }
 
+@media screen and (orientation: portrait) and (min-height: 1000px) {
+  body .container .small_sqr h1 {
+    font-size: 4em;
+  }
+}
+
 img {
   max-width: 100%;
 }
