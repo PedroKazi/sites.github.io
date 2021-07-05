@@ -203,6 +203,54 @@ body .roundC {
   background-color: #f8f8f8;
 }
 
+body .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #007ca8;
+}
+
+body .navbar a {
+  text-decoration: none;
+  color: #f8f8f8;
+  font-family: PierSans, sans-serif;
+  padding: 0 3%;
+  font-size: 1.2em;
+}
+
+body .meusLivros {
+  width: 100vw;
+  text-align: center;
+}
+
+body .meusLivros div {
+  width: 50%;
+  margin: auto;
+  border: solid 1px black;
+}
+
+body .meusLivros #details {
+  background-color: #007ca8;
+  text-align: center;
+  visibility: hidden;
+}
+
+body .meusLivros #details .wrapper {
+  width: 100%;
+  height: 200px;
+}
+
+body .meusLivros button {
+  width: 100%;
+  padding: 1%;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
