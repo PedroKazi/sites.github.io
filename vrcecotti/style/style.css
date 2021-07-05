@@ -87,15 +87,32 @@ body .big_sqr p {
 
 body .big_sqr input[type=text], body .big_sqr input[type=password] {
   width: 90%;
-  border: none;
-  padding: 3% 0;
-  margin-bottom: 10px;
+  border: solid 1px #242424;
+  padding: 1% 0;
   font-family: sans-serif;
+}
+
+body .big_sqr .formItem {
+  width: 100%;
+  margin: 0;
+}
+
+body .big_sqr .formItem label {
+  display: block;
+  text-align: left;
+  margin-left: 5%;
+  font-family: PierSans, sans-serif;
+  font-size: 1em;
+}
+
+body .big_sqr .formItem input[type=text], body .big_sqr .formItem input[type=password] {
+  text-align: center;
 }
 
 body .big_sqr button {
   width: 90%;
   padding: 3% 0;
+  margin-top: 10px;
   background-color: #092DB5;
   border: none;
   font-family: PierSans, sans-serif;
@@ -107,7 +124,7 @@ body .big_sqr button {
 body .big_sqr::after {
   content: '';
   display: block;
-  padding-bottom: 5%;
+  padding-bottom: 0%;
   max-height: 95%;
 }
 
@@ -146,6 +163,18 @@ body .container .small_sqr a {
   text-decoration: none;
 }
 
+body .container .three {
+  width: 45%;
+  margin: 3% auto;
+  padding: 10px;
+}
+
+body .container .three .wrapper {
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 body .container .small_sqr::after {
   content: '';
   display: block;
@@ -155,9 +184,7 @@ body .container .small_sqr::after {
 body .circle {
   width: 80%;
   padding: 5%;
-  background: #095b78;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #095b78), color-stop(60%, #007ca8));
-  background: linear-gradient(0deg, #095b78 30%, #007ca8 60%);
+  background-color: #f8f8f8;
   border: solid #242424 5px;
   border-radius: 50%;
 }
@@ -167,11 +194,13 @@ body .circle img {
 }
 
 body #empresa_icon {
-  padding: 10%;
+  padding: 8%;
+  margin: 0 auto;
 }
 
 body .roundC {
   border-radius: 50px;
+  background-color: #f8f8f8;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -189,8 +218,15 @@ body .roundC {
   body .big_sqr input[type=text], body .big_sqr input[type=password] {
     font-size: 1.5em;
   }
+  body .big_sqr .formItem label {
+    font-size: 1.5em;
+  }
   body .big_sqr button {
     font-size: 1.5em;
+  }
+  body .container .three {
+    font-size: .8em;
+    width: 40%;
   }
 }
 
@@ -225,6 +261,9 @@ body .roundC {
     padding: 5% 0;
     font-size: 3em;
   }
+  body .container .three {
+    font-size: .9em;
+  }
 }
 
 @media only screen and (min-width: 1900px) {
@@ -256,6 +295,9 @@ body .roundC {
   body .container .small_sqr h1 {
     font-size: 5em;
   }
+  body .container .three {
+    font-size: .8em;
+  }
 }
 
 @media screen and (orientation: landscape) {
@@ -263,6 +305,16 @@ body .roundC {
     display: inline-block;
     width: 30%;
     margin: auto 5%;
+  }
+  body .container .three {
+    display: inline-block;
+    width: 20%;
+    margin: auto 3%;
+  }
+  body .container .three .wrapper {
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   body .big_sqr {
     width: 40vw;
