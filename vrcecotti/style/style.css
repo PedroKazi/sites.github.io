@@ -230,20 +230,34 @@ body .meusLivros {
 }
 
 body .meusLivros div {
-  width: 50%;
-  margin: auto;
-  border: solid 1px black;
-}
-
-body .meusLivros #details {
-  background-color: #007ca8;
-  text-align: center;
-  visibility: hidden;
-}
-
-body .meusLivros #details .wrapper {
   width: 100%;
-  height: 200px;
+  margin: auto;
+}
+
+body .meusLivros .details {
+  background-color: #007ca8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 0px;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+body .meusLivros .details .wrapper {
+  width: 45%;
+  display: inline-block;
+}
+
+body .meusLivros .details .detalhes {
+  width: 45%;
+  display: inline-block;
 }
 
 body .meusLivros button {

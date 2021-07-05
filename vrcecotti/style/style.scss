@@ -212,19 +212,26 @@ body{
         text-align: center;
 
         div{
-            width: 50%;
+            width: 100%;
             margin: auto;
-            border: solid 1px black;
         }
 
-        #details{
+        .details{
             background-color: #007ca8;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-height: 0px;
             visibility: hidden;
+            overflow: hidden;
 
             .wrapper{
-                width: 100%;
-                height: 200px;
+                width: 45%;
+                display: inline-block;
+            }
+            .detalhes{
+                width: 45%;
+                display: inline-block;
             }
         }
 
