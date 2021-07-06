@@ -38,6 +38,24 @@ body{
         transform: translate(-50%, -50%);
     }
 
+    .button{
+        width: 90%;
+        background-color: #095b78;
+        padding: 5% 0;
+
+        a{
+            color: #242424;
+            font-family: PierSans, sans-serif;
+            font-weight: bold;
+            font-size: 1em;
+            text-decoration: none;
+
+            :visited{
+                color: #242424;
+            }
+        }
+    }
+
     .big_sqr{
         width: 70vw;
         background-color: #007ca8;
@@ -50,24 +68,6 @@ body{
 
             img{
                 width: 100%;
-            }
-        }
-
-        .button{
-            width: 90%;
-            background-color: #095b78;
-            padding: 5% 0;
-
-            a{
-                color: #242424;
-                font-family: PierSans, sans-serif;
-                font-weight: bold;
-                font-size: 1em;
-                text-decoration: none;
-
-                :visited{
-                    color: #242424;
-                }
             }
         }
 
@@ -273,12 +273,10 @@ body{
             max-height: 0px;
             visibility: hidden;
             overflow: hidden;
+            margin: 0% auto;
+            border: solid 5px #095b78;
 
             .wrapper{
-                width: 45%;
-                display: inline-block;
-            }
-            .detalhes{
                 width: 45%;
                 display: inline-block;
             }
@@ -287,6 +285,10 @@ body{
         button{
             width: 100%;
             padding: 1%;
+            border: solid 5px #095b78;
+            background-color: #007ca8;
+            color: #f8f8f8;
+            border-radius: 50px;
         }
     }
 }
