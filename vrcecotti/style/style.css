@@ -297,6 +297,12 @@ body .meusLivros button {
   body .container .small_sqr h1 {
     font-size: 2em;
   }
+  body .meusLivros button {
+    font-size: 1.5em;
+  }
+  body .meusLivros .details {
+    font-size: 1.5em;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -325,6 +331,18 @@ body .meusLivros button {
   }
   body .container .three {
     font-size: .9em;
+  }
+  body .meusLivros .details {
+    font-size: 1.8em;
+  }
+  body .navbar a {
+    font-size: 1.8em;
+  }
+  body .navbar #logoMeus {
+    width: 10%;
+  }
+  body .navbar #logoMeus img {
+    width: 100%;
   }
 }
 
@@ -360,6 +378,15 @@ body .meusLivros button {
   body .container .three {
     font-size: .8em;
   }
+  body .navbar a {
+    font-size: 3em;
+  }
+  body .meusLivros button {
+    font-size: 3em;
+  }
+  body .meusLivros .details {
+    font-size: 3em;
+  }
 }
 
 @media screen and (orientation: landscape) {
@@ -380,6 +407,18 @@ body .meusLivros button {
   }
   body .big_sqr {
     width: 40vw;
+  }
+  body .meusLivros .details {
+    width: 80%;
+  }
+  body .meusLivros .details .wrapper {
+    width: 30%;
+    display: inline-block;
+    margin: 3% 0;
+  }
+  body .meusLivros .details .detalhes {
+    width: 65%;
+    display: inline-block;
   }
 }
 
