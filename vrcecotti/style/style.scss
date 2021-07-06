@@ -55,9 +55,8 @@ body{
 
         .button{
             width: 90%;
-            background-color: rgb(10, 95, 191);
+            background-color: #095b78;
             padding: 5% 0;
-            border: solid #092DB5 3px;
 
             a{
                 color: #242424;
@@ -69,6 +68,30 @@ body{
                 :visited{
                     color: #242424;
                 }
+            }
+        }
+
+        .dados{
+            p{
+                color: #f8f8f8;
+                font-size: .8em;
+            }
+        }
+
+        .profile_btn{
+            width: 100%;
+            margin: 0;
+            .button{
+                width: 45%;
+                border-radius: 50px;
+                a{
+                    color: #f8f8f8;
+                    font-size: .8em;
+                }
+            }
+
+            div{
+                display: inline-block;
             }
         }
 
@@ -169,6 +192,28 @@ body{
             display: block;
             padding-bottom: 0%;
         }
+        .big_sqr{
+            width: 80%;
+            margin: 5% auto;
+        }
+        .requisitos{
+            font-family: PierSans, sans-serif;
+            font-size: 1em;
+            h1{
+                margin: 3% 0;
+            }
+            ul, p{
+                margin: 0 5% 3% 5%;
+                text-align: justify;
+            }
+            ul{
+                margin: 0;
+                margin-right: 5%;
+            }
+            .button{
+                padding: 2%;
+            }
+        }
     }
 
     .circle{
@@ -181,6 +226,10 @@ body{
         img{
             width: 100%;
         }
+    }
+
+    #fotoPerfil{
+        width: 30%;
     }
 
     #empresa_icon{
@@ -270,6 +319,23 @@ body{
                     font-size: 1.5em;
                 }
             }
+
+            .dados{
+                p{
+                    font-size: 1em;
+                }
+            }
+
+            .profile_btn{
+                .button{
+                    width: 40%;
+                    display: inline-block;
+                    margin: 0;
+                    a{
+                        font-size: 1em;
+                    }
+                }
+            }
     
             button{
                 font-size: 1.5em;
@@ -279,6 +345,17 @@ body{
             .three{
                 font-size: .8em;
                 width: 40%;
+            }
+            .requisitos{
+                h1{
+                    font-size: 2em;
+                }
+                ul{
+                    font-size: 1em;
+                }
+                p{
+                    font-size: 1em;
+                }
             }
         }
     }
@@ -293,6 +370,14 @@ body{
                     font-size: 2em;
                 }
             }
+            .requisitos{
+                ul{
+                    font-size: 1.5em;
+                }
+                p{
+                    font-size: 1.5em;
+                }
+            }
         }
         .meusLivros{
             button{
@@ -300,6 +385,26 @@ body{
             }
             .details{
                 font-size: 1.5em;
+            }
+        }
+
+        .big_sqr{
+
+            .dados{
+                p{
+                    font-size: 1.5em;
+                }
+            }
+
+            .profile_btn{
+                .button{
+                    width: 40%;
+                    display: inline-block;
+                    margin: 0;
+                    a{
+                        font-size: 1.5em;
+                    }
+                }
             }
         }
     }
@@ -329,6 +434,24 @@ body{
             button{
                 font-size: 2em;
             }
+
+    
+            .dados{
+                p{
+                    font-size: 2em;
+                }
+            }
+
+            .profile_btn{
+                .button{
+                    width: 40%;
+                    display: inline-block;
+                    margin: 0;
+                    a{
+                        font-size: 2em;
+                    }
+                }
+            }
         }
 
         .container{
@@ -342,6 +465,23 @@ body{
             }
             .three{
                 font-size: .9em;
+            }
+            .big_sqr{
+                width: 65%;
+            }
+            .requisitos{
+                h1{
+                    font-size: 2.5em;
+                }
+                ul{
+                    font-size: 1.8em;
+                }
+                p{
+                    font-size: 1.8em;
+                }
+                .button{
+                    margin: 2% auto;
+                }
             }
         }
 
@@ -394,6 +534,23 @@ body{
             button{
                 font-size: 2.5em;
             }
+
+            .dados{
+                p{
+                    font-size: 3em;
+                }
+            }
+
+            .profile_btn{
+                .button{
+                    width: 40%;
+                    display: inline-block;
+                    margin: 0;
+                    a{
+                        font-size: 3em;
+                    }
+                }
+            }
         }
 
         .container{
@@ -405,6 +562,25 @@ body{
             }
             .three{
                 font-size: .8em;
+            }
+            .big_sqr{
+                width: 80%;
+                margin: 3% auto;
+            }
+            .requisitos{
+                h1{
+                    font-size: 3em;
+                    margin: 1% 0;
+                }
+                ul{
+                    font-size: 2em;
+                }
+                p{
+                    font-size: 2em;
+                }
+                .button{
+                    margin: 2% auto;
+                }
             }
         }
 
