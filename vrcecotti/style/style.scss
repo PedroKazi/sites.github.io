@@ -38,24 +38,6 @@ body{
         transform: translate(-50%, -50%);
     }
 
-    .button{
-        width: 90%;
-        background-color: #095b78;
-        padding: 5% 0;
-
-        a{
-            color: #242424;
-            font-family: PierSans, sans-serif;
-            font-weight: bold;
-            font-size: 1em;
-            text-decoration: none;
-
-            :visited{
-                color: #242424;
-            }
-        }
-    }
-
     .big_sqr{
         width: 70vw;
         background-color: #007ca8;
@@ -68,6 +50,24 @@ body{
 
             img{
                 width: 100%;
+            }
+        }
+
+        .button{
+            width: 90%;
+            background-color: #095b78;
+            padding: 5% 0;
+    
+            a{
+                color: #242424;
+                font-family: PierSans, sans-serif;
+                font-weight: bold;
+                font-size: 1em;
+                text-decoration: none;
+    
+                :visited{
+                    color: #242424;
+                }
             }
         }
 
@@ -136,6 +136,24 @@ body{
             color: #f8f8f8;
             margin-bottom: 10px;
             cursor: pointer;
+        }
+
+        .wrapper{
+            width: 30%;
+            margin: 0 auto;
+        }
+
+        #comments{
+            width: 90%;
+            textarea{
+                font-size: 1em;
+                font-family: PierSans, sans-serif;
+                height: 100%;
+                width: 100%;
+                -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+                -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+                box-sizing: border-box;         /* Opera/IE 8+ */
+            }
         }
     }
     .big_sqr::after{
@@ -266,6 +284,7 @@ body{
         }
 
         .details{
+            width: 90%;
             background-color: #007ca8;
             display: flex;
             justify-content: space-between;
@@ -280,6 +299,37 @@ body{
                 width: 45%;
                 display: inline-block;
             }
+
+            .avaliacao{
+                width: 45%;
+                margin: 2%;
+                text-align: center;
+
+                #download{
+                    width: 30%;
+                }
+
+                .button{
+                    background-color: #095b78;
+                    width: 100%;
+                }
+
+                .aprovacao{
+                    margin: 5% 0;
+                    padding: 3% 0;
+                }
+
+                a{
+                    margin: 0;
+                    font-family: PierSans, sans-serif;
+                    font-size: 1em;
+                    text-decoration: none;
+                    color: #f8f8f8;
+                }
+                a:visited{
+                    color: #f8f8f8;
+                }
+            }
         }
 
         button{
@@ -289,6 +339,7 @@ body{
             background-color: #007ca8;
             color: #f8f8f8;
             border-radius: 50px;
+            cursor: pointer;
         }
     }
 }
@@ -551,6 +602,12 @@ body{
                     a{
                         font-size: 3em;
                     }
+                }
+            }
+
+            #comments{
+                textarea{
+                    font-size: 2em;
                 }
             }
         }

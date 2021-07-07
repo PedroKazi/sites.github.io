@@ -42,24 +42,6 @@ body .center {
           transform: translate(-50%, -50%);
 }
 
-body .button {
-  width: 90%;
-  background-color: #095b78;
-  padding: 5% 0;
-}
-
-body .button a {
-  color: #242424;
-  font-family: PierSans, sans-serif;
-  font-weight: bold;
-  font-size: 1em;
-  text-decoration: none;
-}
-
-body .button a :visited {
-  color: #242424;
-}
-
 body .big_sqr {
   width: 70vw;
   background-color: #007ca8;
@@ -74,6 +56,24 @@ body .big_sqr div {
 
 body .big_sqr div img {
   width: 100%;
+}
+
+body .big_sqr .button {
+  width: 90%;
+  background-color: #095b78;
+  padding: 5% 0;
+}
+
+body .big_sqr .button a {
+  color: #242424;
+  font-family: PierSans, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+body .big_sqr .button a :visited {
+  color: #242424;
 }
 
 body .big_sqr .dados p {
@@ -142,6 +142,27 @@ body .big_sqr button {
   color: #f8f8f8;
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+body .big_sqr .wrapper {
+  width: 30%;
+  margin: 0 auto;
+}
+
+body .big_sqr #comments {
+  width: 90%;
+}
+
+body .big_sqr #comments textarea {
+  font-size: 1em;
+  font-family: PierSans, sans-serif;
+  height: 100%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
 }
 
 body .big_sqr::after {
@@ -290,6 +311,7 @@ body .meusLivros div {
 }
 
 body .meusLivros .details {
+  width: 90%;
   background-color: #007ca8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,6 +334,38 @@ body .meusLivros .details .wrapper {
   display: inline-block;
 }
 
+body .meusLivros .details .avaliacao {
+  width: 45%;
+  margin: 2%;
+  text-align: center;
+}
+
+body .meusLivros .details .avaliacao #download {
+  width: 30%;
+}
+
+body .meusLivros .details .avaliacao .button {
+  background-color: #095b78;
+  width: 100%;
+}
+
+body .meusLivros .details .avaliacao .aprovacao {
+  margin: 5% 0;
+  padding: 3% 0;
+}
+
+body .meusLivros .details .avaliacao a {
+  margin: 0;
+  font-family: PierSans, sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  color: #f8f8f8;
+}
+
+body .meusLivros .details .avaliacao a:visited {
+  color: #f8f8f8;
+}
+
 body .meusLivros button {
   width: 100%;
   padding: 1%;
@@ -319,6 +373,7 @@ body .meusLivros button {
   background-color: #007ca8;
   color: #f8f8f8;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -498,6 +553,9 @@ body .meusLivros button {
   }
   body .big_sqr .profile_btn .button a {
     font-size: 3em;
+  }
+  body .big_sqr #comments textarea {
+    font-size: 2em;
   }
   body .container .small_sqr {
     border-width: 15px;
