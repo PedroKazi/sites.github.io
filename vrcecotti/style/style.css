@@ -1,31 +1,3 @@
-@font-face {
-  font-family: PierSans;
-  font-weight: normal;
-  font-style: normal;
-  src: url(../fonts/PPPierSans-Regular.otf);
-}
-
-@font-face {
-  font-family: PierSans;
-  font-weight: bold;
-  font-style: normal;
-  src: url(../fonts/PPPierSans-Bold.otf);
-}
-
-@font-face {
-  font-family: PierSans;
-  font-weight: normal;
-  font-style: italic;
-  src: url(../fonts/PPPierSans-Italic.otf);
-}
-
-@font-face {
-  font-family: PierSans;
-  font-weight: bold;
-  font-style: italic;
-  src: url(../fonts/PPPierSans-BoldItalic.otf);
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -44,9 +16,10 @@ body .center {
 
 body .big_sqr {
   width: 70vw;
-  background-color: #007ca8;
+  background-color: #f8f8f8;
   text-align: center;
-  border: solid #242424 5px;
+  border: solid #8d8d8d 1px;
+  border-radius: 10px;
 }
 
 body .big_sqr div {
@@ -60,13 +33,14 @@ body .big_sqr div img {
 
 body .big_sqr .button {
   width: 90%;
-  background-color: #095b78;
-  padding: 5% 0;
+  background-color: #007bff;
+  padding: 2% 0;
+  border-radius: 10px;
 }
 
 body .big_sqr .button a {
-  color: #242424;
-  font-family: PierSans, sans-serif;
+  color: #f8f8f8;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1em;
   text-decoration: none;
@@ -76,19 +50,26 @@ body .big_sqr .button a :visited {
   color: #242424;
 }
 
+body .big_sqr .button:hover {
+  background-color: #0064cf;
+  cursor: pointer;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
 body .big_sqr .dados p {
-  color: #f8f8f8;
+  color: #242424;
   font-size: .8em;
 }
 
 body .big_sqr .profile_btn {
   width: 100%;
   margin: 0;
+  margin-bottom: 10px;
 }
 
 body .big_sqr .profile_btn .button {
   width: 45%;
-  border-radius: 50px;
 }
 
 body .big_sqr .profile_btn .button a {
@@ -101,7 +82,7 @@ body .big_sqr .profile_btn div {
 }
 
 body .big_sqr p {
-  font-family: PierSans, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1em;
   color: #242424;
@@ -124,7 +105,7 @@ body .big_sqr .formItem label {
   display: block;
   text-align: left;
   margin-left: 5%;
-  font-family: PierSans, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
 }
 
@@ -133,15 +114,22 @@ body .big_sqr .formItem input[type=text], body .big_sqr .formItem input[type=pas
 }
 
 body .big_sqr button {
-  width: 90%;
-  padding: 3% 0;
-  margin-top: 10px;
-  background-color: #092DB5;
+  width: 91%;
+  padding: 1% 0;
+  margin-top: 20px;
+  background-color: #007bff;
   border: none;
-  font-family: PierSans, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #f8f8f8;
   margin-bottom: 10px;
   cursor: pointer;
+  border-radius: 5px;
+}
+
+body .big_sqr button:hover {
+  background-color: #0064cf;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
 }
 
 body .big_sqr .wrapper {
@@ -155,7 +143,7 @@ body .big_sqr #comments {
 
 body .big_sqr #comments textarea {
   font-size: 1em;
-  font-family: PierSans, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   height: 100%;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -178,10 +166,10 @@ body .container {
 }
 
 body .container .small_sqr {
-  background-color: #007ca8;
+  background-color: #f8f8f8;
   width: 55%;
   margin: 20% auto;
-  border: solid #242424 5px;
+  border: solid #8d8d8d 1px;
   border-radius: 50px;
   text-align: center;
 }
@@ -197,14 +185,26 @@ body .container .small_sqr .wrapper img {
 
 body .container .small_sqr h1 {
   margin: 0;
-  font-family: PierSans, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 1.5em;
-  color: #f8f8f8;
+  color: #242424;
 }
 
 body .container .small_sqr a {
   text-decoration: none;
+}
+
+body .container .small_sqr::after {
+  content: '';
+  display: block;
+  padding-bottom: 0%;
+}
+
+body .container .small_sqr:hover {
+  background-color: #a8a8a8;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
 }
 
 body .container .three {
@@ -219,19 +219,13 @@ body .container .three .wrapper {
   margin-bottom: 0px;
 }
 
-body .container .small_sqr::after {
-  content: '';
-  display: block;
-  padding-bottom: 0%;
-}
-
 body .container .big_sqr {
   width: 80%;
   margin: 5% auto;
 }
 
 body .container .requisitos {
-  font-family: PierSans, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
 }
 
@@ -289,15 +283,44 @@ body .navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #007ca8;
+  background-color: #f8f8f8;
+  margin-bottom: 10px;
 }
 
-body .navbar a {
-  text-decoration: none;
+body .navbar .button {
+  width: 30%;
+  background-color: #007bff;
+  padding: 1%;
+  margin: 0 1%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+body .navbar .button a {
   color: #f8f8f8;
-  font-family: PierSans, sans-serif;
-  padding: 0 3%;
-  font-size: 1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+body .navbar .button a :visited {
+  color: #242424;
+}
+
+body .navbar .button:hover {
+  background-color: #0064cf;
+  cursor: pointer;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+}
+
+body .navbar #logoMeus {
+  width: 15%;
+}
+
+body .navbar #logoMeus img {
+  width: 100%;
 }
 
 body .meusLivros {
@@ -312,7 +335,7 @@ body .meusLivros div {
 
 body .meusLivros .details {
   width: 90%;
-  background-color: #007ca8;
+  background-color: #f8f8f8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,7 +349,7 @@ body .meusLivros .details {
   visibility: hidden;
   overflow: hidden;
   margin: 0% auto;
-  border: solid 5px #095b78;
+  border: solid 1px #8d8d8d;
 }
 
 body .meusLivros .details .wrapper {
@@ -345,8 +368,16 @@ body .meusLivros .details .avaliacao #download {
 }
 
 body .meusLivros .details .avaliacao .button {
-  background-color: #095b78;
+  background-color: #007bff;
   width: 100%;
+  border-radius: 10px;
+}
+
+body .meusLivros .details .avaliacao .button:hover {
+  background-color: #0064cf;
+  cursor: pointer;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
 }
 
 body .meusLivros .details .avaliacao .aprovacao {
@@ -356,7 +387,7 @@ body .meusLivros .details .avaliacao .aprovacao {
 
 body .meusLivros .details .avaliacao a {
   margin: 0;
-  font-family: PierSans, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   text-decoration: none;
   color: #f8f8f8;
@@ -369,11 +400,17 @@ body .meusLivros .details .avaliacao a:visited {
 body .meusLivros button {
   width: 100%;
   padding: 1%;
-  border: solid 5px #095b78;
-  background-color: #007ca8;
-  color: #f8f8f8;
+  border: solid 1px #8d8d8d;
+  background-color: #f8f8f8;
+  color: #0000cd;
   border-radius: 50px;
   cursor: pointer;
+}
+
+body .meusLivros button:hover {
+  background-color: #a8a8a8;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -421,6 +458,12 @@ body .meusLivros button {
   body .container .requisitos p {
     font-size: 1em;
   }
+  body .navbar #logoMeus {
+    width: 10%;
+  }
+  body .navbar .button a {
+    font-size: 1.2em;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -449,6 +492,9 @@ body .meusLivros button {
     margin: 0;
   }
   body .big_sqr .profile_btn .button a {
+    font-size: 1.5em;
+  }
+  body .navbar .button a {
     font-size: 1.5em;
   }
 }
@@ -481,9 +527,6 @@ body .meusLivros button {
   body .big_sqr .profile_btn .button a {
     font-size: 2em;
   }
-  body .container .small_sqr {
-    border-width: 8px;
-  }
   body .container .small_sqr h1 {
     padding: 5% 0;
     font-size: 3em;
@@ -509,14 +552,11 @@ body .meusLivros button {
   body .meusLivros .details {
     font-size: 1.8em;
   }
-  body .navbar a {
-    font-size: 1.8em;
-  }
   body .navbar #logoMeus {
-    width: 10%;
+    width: 8%;
   }
-  body .navbar #logoMeus img {
-    width: 100%;
+  body .navbar .button a {
+    font-size: 1.8em;
   }
 }
 
@@ -526,7 +566,7 @@ body .meusLivros button {
   }
   body .big_sqr {
     width: 40vw;
-    border-width: 7px;
+    border-radius: 20px;
   }
   body .big_sqr p {
     font-size: 3em;
@@ -557,9 +597,6 @@ body .meusLivros button {
   body .big_sqr #comments textarea {
     font-size: 2em;
   }
-  body .container .small_sqr {
-    border-width: 15px;
-  }
   body .container .small_sqr h1 {
     font-size: 5em;
   }
@@ -583,8 +620,11 @@ body .meusLivros button {
   body .container .requisitos .button {
     margin: 2% auto;
   }
-  body .navbar a {
-    font-size: 3em;
+  body .navbar #logoMeus {
+    width: 8%;
+  }
+  body .navbar .button a {
+    font-size: 2.5em;
   }
   body .meusLivros button {
     font-size: 3em;

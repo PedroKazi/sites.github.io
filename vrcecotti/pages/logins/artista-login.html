@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style.css">
-    <title>Login Editora</title>
+    <link rel="stylesheet" href="../../style/style.css">
+    <title>Login Autor</title>
 </head>
 <body>
     <div class="big_sqr center roundC">
-        <div class="circle" id="empresa_icon">
-            <img src="../img/businessman.png" alt="Editora">
+        <div class="circle">
+            <img src="../../img/artista.png" alt="Autor">
         </div>
         <form action="">
             <div class="formItem">
-                <label for="cnpj">CNPJ</label>
-                <input type="text" id="cnpj" placeholder="CNPJ" autocomplete="off" maxlength="18">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" placeholder="CPF" autocomplete="off" maxlength="14" onkeyup="mascaraCpf()">
             </div>
             <div class="formItem">
                 <label for="password">Senha</label>
@@ -24,7 +24,7 @@
         </form>
         <button type="submit">Login</button>
         <br>
-        <a href="pg-principal.html">temp</a>
+        <a href="../pg-principal.html">temp</a>
     </div>
 </body>
 </html>

@@ -1,28 +1,3 @@
-@font-face {
-    font-family: PierSans;
-    font-weight: normal;
-    font-style: normal;
-    src: url(../fonts/PPPierSans-Regular.otf);
-}
-@font-face {
-    font-family: PierSans;
-    font-weight: bold;
-    font-style: normal;
-    src: url(../fonts/PPPierSans-Bold.otf);
-}
-@font-face {
-    font-family: PierSans;
-    font-weight: normal;
-    font-style: italic;
-    src: url(../fonts/PPPierSans-Italic.otf);
-}
-@font-face {
-    font-family: PierSans;
-    font-weight: bold;
-    font-style: italic;
-    src: url(../fonts/PPPierSans-BoldItalic.otf);
-}
-
 body{
     margin: 0;
     padding: 0;
@@ -40,9 +15,10 @@ body{
 
     .big_sqr{
         width: 70vw;
-        background-color: #007ca8;
+        background-color: #f8f8f8;
         text-align: center;
-        border: solid #242424 5px;
+        border: solid #8d8d8d 1px;
+        border-radius: 10px;
 
         div{
             width: 40%;
@@ -55,12 +31,13 @@ body{
 
         .button{
             width: 90%;
-            background-color: #095b78;
-            padding: 5% 0;
+            background-color: #007bff;
+            padding: 2% 0;
+            border-radius: 10px;
     
             a{
-                color: #242424;
-                font-family: PierSans, sans-serif;
+                color: #f8f8f8;
+                font-family: Arial, Helvetica, sans-serif;
                 font-weight: bold;
                 font-size: 1em;
                 text-decoration: none;
@@ -70,10 +47,15 @@ body{
                 }
             }
         }
+        .button:hover{
+            background-color: #0064cf;
+            cursor: pointer;
+            transition:ease-in 0.3s;
+        }
 
         .dados{
             p{
-                color: #f8f8f8;
+                color: #242424;
                 font-size: .8em;
             }
         }
@@ -81,9 +63,9 @@ body{
         .profile_btn{
             width: 100%;
             margin: 0;
+            margin-bottom: 10px;
             .button{
                 width: 45%;
-                border-radius: 50px;
                 a{
                     color: #f8f8f8;
                     font-size: .8em;
@@ -96,7 +78,7 @@ body{
         }
 
         p{
-            font-family: PierSans, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
             font-size: 1em;
             color: #242424;
@@ -118,7 +100,7 @@ body{
                 display: block;
                 text-align: left;
                 margin-left: 5%;
-                font-family: PierSans, sans-serif;
+                font-family: Arial, Helvetica, sans-serif;
                 font-size: 1em;
             }
             input[type=text], input[type=password]{
@@ -127,15 +109,20 @@ body{
         }
 
         button{
-            width: 90%;
-            padding: 3% 0;
-            margin-top: 10px;
-            background-color: #092DB5;
+            width: 91%;
+            padding: 1% 0;
+            margin-top: 20px;
+            background-color: #007bff;
             border: none;
-            font-family: PierSans, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             color: #f8f8f8;
             margin-bottom: 10px;
             cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: #0064cf;
+            transition:ease-in 0.3s;
         }
 
         .wrapper{
@@ -147,7 +134,7 @@ body{
             width: 90%;
             textarea{
                 font-size: 1em;
-                font-family: PierSans, sans-serif;
+                font-family: Arial, Helvetica, sans-serif;
                 height: 100%;
                 width: 100%;
                 -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -167,10 +154,10 @@ body{
         width: 100vw;
         text-align: center;
         .small_sqr{
-            background-color: #007ca8;
+            background-color: #f8f8f8;
             width: 55%;
             margin: 20% auto;
-            border: solid #242424 5px;
+            border: solid #8d8d8d 1px;
             border-radius: 50px;
             text-align: center;
 
@@ -184,15 +171,24 @@ body{
 
             h1{
                 margin: 0;
-                font-family: PierSans, sans-serif;
+                font-family: Arial, Helvetica, sans-serif;
                 font-weight: bold;
                 font-size: 1.5em;
-                color: #f8f8f8;
+                color: #242424;
             }
 
             a{
                 text-decoration: none;
             }
+        }
+        .small_sqr::after{
+            content: '';
+            display: block;
+            padding-bottom: 0%;
+        }
+        .small_sqr:hover{
+            background-color: #a8a8a8;
+            transition:ease-in 0.3s;
         }
         .three{
             width: 45%;
@@ -205,17 +201,12 @@ body{
                 margin-bottom: 0px;
             }
         }
-        .small_sqr::after{
-            content: '';
-            display: block;
-            padding-bottom: 0%;
-        }
         .big_sqr{
             width: 80%;
             margin: 5% auto;
         }
         .requisitos{
-            font-family: PierSans, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 1em;
             h1{
                 margin: 3% 0;
@@ -264,14 +255,40 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #007ca8;
+        background-color: #f8f8f8;
+        margin-bottom: 10px;
+        
+        .button{
+            width: 30%;
+            background-color: #007bff;
+            padding: 1%;
+            margin: 0 1%;
+            border-radius: 10px;
+            text-align: center;
+    
+            a{
+                color: #f8f8f8;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 1em;
+                text-decoration: none;
+    
+                :visited{
+                    color: #242424;
+                }
+            }
+        }
+        .button:hover{
+            background-color: #0064cf;
+            cursor: pointer;
+            transition: ease-in 0.3s;
+        }
+        #logoMeus{
+            width: 15%;
 
-        a{
-            text-decoration: none;
-            color: #f8f8f8;
-            font-family: PierSans, sans-serif;
-            padding: 0 3%;
-            font-size: 1.2em;
+            img{
+                width: 100%;
+            }
         }
     }
     .meusLivros{
@@ -285,7 +302,7 @@ body{
 
         .details{
             width: 90%;
-            background-color: #007ca8;
+            background-color: #f8f8f8;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -293,7 +310,7 @@ body{
             visibility: hidden;
             overflow: hidden;
             margin: 0% auto;
-            border: solid 5px #095b78;
+            border: solid 1px #8d8d8d;
 
             .wrapper{
                 width: 45%;
@@ -310,8 +327,14 @@ body{
                 }
 
                 .button{
-                    background-color: #095b78;
+                    background-color: #007bff;
                     width: 100%;
+                    border-radius: 10px;
+                }
+                .button:hover{
+                    background-color: #0064cf;
+                    cursor: pointer;
+                    transition: ease-in 0.3s;
                 }
 
                 .aprovacao{
@@ -321,7 +344,7 @@ body{
 
                 a{
                     margin: 0;
-                    font-family: PierSans, sans-serif;
+                    font-family: Arial, Helvetica, sans-serif;
                     font-size: 1em;
                     text-decoration: none;
                     color: #f8f8f8;
@@ -335,11 +358,15 @@ body{
         button{
             width: 100%;
             padding: 1%;
-            border: solid 5px #095b78;
-            background-color: #007ca8;
-            color: #f8f8f8;
+            border: solid 1px #8d8d8d;
+            background-color: #f8f8f8;
+            color: #0000cd;
             border-radius: 50px;
             cursor: pointer;
+        }
+        button:hover{
+            background-color: #a8a8a8;
+            transition: ease-in 0.3s;
         }
     }
 }
@@ -411,6 +438,18 @@ body{
                 }
             }
         }
+        .navbar{
+            
+            #logoMeus{
+                width: 10%;
+            }
+            .button{
+        
+                a{
+                    font-size: 1.2em;
+                }
+            }
+        }
     }
 }
 
@@ -440,7 +479,6 @@ body{
                 font-size: 1.5em;
             }
         }
-
         .big_sqr{
 
             .dados{
@@ -457,6 +495,14 @@ body{
                     a{
                         font-size: 1.5em;
                     }
+                }
+            }
+        }
+        .navbar{
+            .button{
+        
+                a{
+                    font-size: 1.5em;
                 }
             }
         }
@@ -506,10 +552,8 @@ body{
                 }
             }
         }
-
         .container{
             .small_sqr{
-                border-width: 8px;
 
                 h1{
                     padding: 5% 0;
@@ -537,23 +581,20 @@ body{
                 }
             }
         }
-
         .meusLivros{
             .details{
                 font-size: 1.8em;
             }
         }
-
         .navbar{
-            a{
-                font-size: 1.8em;
-            }
-
+            
             #logoMeus{
-                width: 10%;
-
-                img{
-                    width: 100%;
+                width: 8%;
+            }
+            .button{
+        
+                a{
+                    font-size: 1.8em;
                 }
             }
         }
@@ -567,7 +608,7 @@ body{
 
         .big_sqr{
             width: 40vw;
-            border-width: 7px;
+            border-radius: 20px;
 
             p{
                 font-size: 3em;
@@ -611,10 +652,8 @@ body{
                 }
             }
         }
-
         .container{
             .small_sqr{
-                border-width: 15px;
                 h1{
                     font-size: 5em;
                 }
@@ -642,13 +681,18 @@ body{
                 }
             }
         }
-
         .navbar{
-            a{
-                font-size: 3em;
+            
+            #logoMeus{
+                width: 8%;
+            }
+            .button{
+        
+                a{
+                    font-size: 2.5em;
+                }
             }
         }
-
         .meusLivros{
             button{
                 font-size: 3em;
