@@ -15,13 +15,10 @@ body{
 
     .big_sqr{
         width: 70vw;
-        background-color: #f8f8f8;
         text-align: center;
-        border: solid #8d8d8d 1px;
-        border-radius: 10px;
 
         div{
-            width: 40%;
+            width: 20%;
             margin: 5% auto;
 
             img{
@@ -30,16 +27,16 @@ body{
         }
 
         .button{
-            width: 90%;
+            width: 50%;
             background-color: #007bff;
-            padding: 2% 0;
+            padding: 10px 0;
             border-radius: 10px;
     
             a{
                 color: #f8f8f8;
                 font-family: Arial, Helvetica, sans-serif;
                 font-weight: bold;
-                font-size: 1em;
+                font-size: .5em;
                 text-decoration: none;
     
                 :visited{
@@ -522,7 +519,7 @@ body{
 
             .button{
                 a{
-                    font-size: 2.5em;
+                    font-size: 1.5em;
                 }
             }
 
