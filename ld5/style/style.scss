@@ -32,13 +32,58 @@ body{
 
         .menu{
             list-style: none;
-            display: flex;
             padding: 0;
-            margin: 1rem auto;
+            margin: 0rem auto;
+
+            hr{
+                border: solid 1px #717070;
+                background-color: #717070;
+                width: 20%;
+            }
 
             .nav-item{
                  margin: .5rem;
 
+                a{
+                    text-decoration: none;
+                    color: #717070;
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+    .sub-menu{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        
+        div{
+            max-height: 0px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        #login{
+            text-align: right;
+            background-color: #d6b7d6;
+            width: 50%;
+        }
+        #cadastro{
+            text-align: left;
+            background-color: #d6b7d6;
+            width: 50%;
+        }
+
+
+        ul{
+            list-style: none;
+            padding: 0 5px;
+            margin: 0;
+
+            li{
+                margin: .1rem 0;
                 a{
                     text-decoration: none;
                     color: #717070;
@@ -67,11 +112,10 @@ body{
             margin-top: 0;
         }
         #main-container{
-            margin-top: 17vh;
-            top: auto;
+            /* top: auto;
             left: auto;
             -ms-transform: none;
-            transform: none;
+            transform: none; */
 
             .wrapper{
                 width: 30%;
@@ -99,6 +143,18 @@ body{
             }
         }
 
+        .sub-menu{
+            div{
+                ul{
+                    li{
+                        a{
+                            font-size: 1.5em;
+                        }
+                    }
+                }
+            }
+        }
+
         #main-container{
 
             .wrapper{
@@ -111,10 +167,22 @@ body{
     body{
         .main-header{
             .menu{
-                margin: 3rem auto;
+                margin: 2rem auto;
                 .nav-item{
                     a{
                         font-size: 3em;
+                    }
+                }
+            }
+        }
+
+        .sub-menu{
+            div{
+                ul{
+                    li{
+                        a{
+                            font-size: 3em;
+                        }
                     }
                 }
             }

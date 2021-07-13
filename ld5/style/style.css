@@ -37,11 +37,14 @@ body .main-header {
 
 body .main-header .menu {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 0;
-  margin: 1rem auto;
+  margin: 0rem auto;
+}
+
+body .main-header .menu hr {
+  border: solid 1px #717070;
+  background-color: #717070;
+  width: 20%;
 }
 
 body .main-header .menu .nav-item {
@@ -49,6 +52,53 @@ body .main-header .menu .nav-item {
 }
 
 body .main-header .menu .nav-item a {
+  text-decoration: none;
+  color: #717070;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+body .sub-menu {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body .sub-menu div {
+  max-height: 0px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+body .sub-menu #login {
+  text-align: right;
+  background-color: #d6b7d6;
+  width: 50%;
+}
+
+body .sub-menu #cadastro {
+  text-align: left;
+  background-color: #d6b7d6;
+  width: 50%;
+}
+
+body .sub-menu ul {
+  list-style: none;
+  padding: 0 5px;
+  margin: 0;
+}
+
+body .sub-menu ul li {
+  margin: .1rem 0;
+}
+
+body .sub-menu ul li a {
   text-decoration: none;
   color: #717070;
   font-family: sans-serif;
@@ -71,11 +121,10 @@ body #main-container .wrapper {
     margin-top: 0;
   }
   body #main-container {
-    margin-top: 17vh;
-    top: auto;
-    left: auto;
-    -webkit-transform: none;
-            transform: none;
+    /* top: auto;
+            left: auto;
+            -ms-transform: none;
+            transform: none; */
   }
   body #main-container .wrapper {
     width: 30%;
@@ -86,6 +135,9 @@ body #main-container .wrapper {
   body .main-header .menu .nav-item a {
     font-size: 1.5em;
   }
+  body .sub-menu div ul li a {
+    font-size: 1.5em;
+  }
   body #main-container .wrapper {
     width: 35%;
   }
@@ -93,9 +145,12 @@ body #main-container .wrapper {
 
 @media screen and (min-width: 1900px) {
   body .main-header .menu {
-    margin: 3rem auto;
+    margin: 2rem auto;
   }
   body .main-header .menu .nav-item a {
+    font-size: 3em;
+  }
+  body .sub-menu div ul li a {
     font-size: 3em;
   }
   body #main-container .wrapper {
