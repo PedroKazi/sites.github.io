@@ -147,10 +147,10 @@ body #logo-ntxt {
 
 @media screen and (min-width: 1200px) {
   body {
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
   body .form-type select, body .account input {
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
 }
 
