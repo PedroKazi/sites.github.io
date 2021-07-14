@@ -1,12 +1,25 @@
 body{
     background-color: #eaeaea;
+    margin: 0;
 
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        
-        /* border: solid 1px black; */
+    }
+    .arrow {
+        border: solid #717070;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+    }
+    .down {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+    }
+    .up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
     }
     .center {
         margin: 0;
@@ -42,6 +55,12 @@ body{
             font-weight: bold;
             font-size: 1em;
         }
+    }
+    .button:hover{
+        cursor: pointer;
+        background-color: #c5a3c5;
+
+        transition: ease 300ms;
     }
     .form-type{
         display: inline-block;
@@ -90,6 +109,122 @@ body{
             color: #717070;
             border-radius: 5px;
         }
+        button:hover{
+            background-color: #c5a3c5;
+            cursor: pointer;
+
+            transition: ease 300ms;
+        }
+    }
+    .main-header{
+        padding: 1rem;
+        height: 70px;
+        background-color: #e4c5e4;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .main-nav{
+            #nav-icon{
+                div {
+                    width: 35px;
+                    height: 5px;
+                    background-color: black;
+                    margin: 6px 0;
+                }
+            }
+            #menu{
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                top: 70px;
+                background-color: #e4c5e4;
+                display: none;
+                .item-nav{
+                    padding: 1rem 0;
+                    margin: 0 1rem;
+                    #subnav{
+                        display: none;
+                        .subitem{
+                            padding: 1rem 0;
+                            margin: 0 1rem;
+                        }
+                    }
+                    #subnav.active{
+                        display: block;
+                    }
+                    #mais.up{
+                        margin-bottom: 0;
+                    }
+                    #mais.down{
+                        margin-bottom: 3px;
+                    }
+                }
+                li, a{
+                    text-decoration: none;
+                    color: #717070;
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    font-size: 1em;
+                }
+                #novo.padbot{
+                    padding-bottom: 0;
+                }
+            }
+            #menu.active{
+                display: block;
+            }
+        }
+        ul{
+            list-style: none;
+        }
+    }
+    #book-list{
+        display: block;
+        text-align: center;
+        width: 100%;
+        .book{
+            width: 90%;
+            margin: 1rem 5%;
+            .book-btn{
+                background-color: #e4c5e4;
+                border-radius: 20px;
+    
+                p{
+                    font-family: sans-serif;
+                    font-weight: bold;
+                    font-size: 1em;
+                    color: #717070;
+                }
+            }
+            .description{
+                display: none;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+    
+                .capa{
+                    width: 45%;
+                }
+                .text{
+                    width: 55%;
+                    padding-left: 1rem;
+    
+                    h1, p{
+                        font-family: sans-serif;
+                    }
+                    p{
+                        text-align: justify;
+                    }
+                }
+            }
+            #book1.active{
+                display: flex;
+            }
+            #book2.active{
+                display: flex;
+            }
+        }
     }
 
     #logo{
@@ -107,12 +242,18 @@ body{
         width: 30%;
         margin: auto;
     }
+    #nav-logo{
+        width: 20%;
+    }
 }
 
 @media screen and (orientation: landscape) {
     body{
         #logo, #login-btn, #cadastro-btn{
             width: 30%;
+        }
+        #nav-logo{
+            width: 10%;
         }
     }
 }
@@ -123,6 +264,34 @@ body{
         }
         .form-type select, .account input{
             padding: 5px;
+        }
+        .main-header{
+            height: auto;
+            padding: .5rem 1rem;
+            .main-nav{
+                #nav-icon{
+                    div{
+                        display: none;
+                    }
+                }
+                #menu{
+                    display: flex;
+                    position: relative;
+                    top: 0px;
+                    left: none;
+                    .item-nav{
+                        #subnav{
+                            position: absolute;
+                            left: 0px;
+                            top: 3rem;
+                            background-color: #e4c5e4;
+                            .subitem{
+
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -147,6 +316,21 @@ body{
         .form-type select, .account input{
             font-size: 1.7em;
         }
+        .arrow {
+            border-width: 0 5px 5px 0;
+            padding: 5px;
+        }
+        .main-header{
+            .main-nav{
+                #menu{
+                    .item-nav{
+                        #subnav{
+                            top: 4rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (min-width: 1900px) {
@@ -161,6 +345,29 @@ body{
                 padding: 10px;
                 border-radius: 10px;
             }
+        }
+        .arrow {
+            border-width: 0 8px 8px 0;
+            padding: 8px;
+        }
+        .main-header{
+            padding: 1rem;
+            .main-nav{
+                #menu{
+                    .item-nav{
+                        margin: 0 2rem;
+
+                        #subnav{
+                            left: 1rem;
+                            top: 6rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        #menu li{
+            margin: 0 2rem;
         }
     }
 }

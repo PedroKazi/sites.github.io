@@ -1,5 +1,6 @@
 body {
   background-color: #eaeaea;
+  margin: 0;
 }
 
 body * {
@@ -7,7 +8,23 @@ body * {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* border: solid 1px black; */
+}
+
+body .arrow {
+  border: solid #717070;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+body .down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+body .up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
 }
 
 body .center {
@@ -46,6 +63,13 @@ body .button a {
   font-family: sans-serif;
   font-weight: bold;
   font-size: 1em;
+}
+
+body .button:hover {
+  cursor: pointer;
+  background-color: #c5a3c5;
+  -webkit-transition: ease 300ms;
+  transition: ease 300ms;
 }
 
 body .form-type {
@@ -99,6 +123,153 @@ body .account button {
   border-radius: 5px;
 }
 
+body .account button:hover {
+  background-color: #c5a3c5;
+  cursor: pointer;
+  -webkit-transition: ease 300ms;
+  transition: ease 300ms;
+}
+
+body .main-header {
+  padding: 1rem;
+  height: 70px;
+  background-color: #e4c5e4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .main-header .main-nav #nav-icon div {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+body .main-header .main-nav #menu {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 70px;
+  background-color: #e4c5e4;
+  display: none;
+}
+
+body .main-header .main-nav #menu .item-nav {
+  padding: 1rem 0;
+  margin: 0 1rem;
+}
+
+body .main-header .main-nav #menu .item-nav #subnav {
+  display: none;
+}
+
+body .main-header .main-nav #menu .item-nav #subnav .subitem {
+  padding: 1rem 0;
+  margin: 0 1rem;
+}
+
+body .main-header .main-nav #menu .item-nav #subnav.active {
+  display: block;
+}
+
+body .main-header .main-nav #menu .item-nav #mais.up {
+  margin-bottom: 0;
+}
+
+body .main-header .main-nav #menu .item-nav #mais.down {
+  margin-bottom: 3px;
+}
+
+body .main-header .main-nav #menu li, body .main-header .main-nav #menu a {
+  text-decoration: none;
+  color: #717070;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+body .main-header .main-nav #menu #novo.padbot {
+  padding-bottom: 0;
+}
+
+body .main-header .main-nav #menu.active {
+  display: block;
+}
+
+body .main-header ul {
+  list-style: none;
+}
+
+body #book-list {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+body #book-list .book {
+  width: 90%;
+  margin: 1rem 5%;
+}
+
+body #book-list .book .book-btn {
+  background-color: #e4c5e4;
+  border-radius: 20px;
+}
+
+body #book-list .book .book-btn p {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: #717070;
+}
+
+body #book-list .book .description {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+body #book-list .book .description .capa {
+  width: 45%;
+}
+
+body #book-list .book .description .text {
+  width: 55%;
+  padding-left: 1rem;
+}
+
+body #book-list .book .description .text h1, body #book-list .book .description .text p {
+  font-family: sans-serif;
+}
+
+body #book-list .book .description .text p {
+  text-align: justify;
+}
+
+body #book-list .book #book1.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #book-list .book #book2.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 body #logo {
   width: 50%;
   margin: auto;
@@ -118,9 +289,16 @@ body #logo-ntxt {
   margin: auto;
 }
 
+body #nav-logo {
+  width: 20%;
+}
+
 @media screen and (orientation: landscape) {
   body #logo, body #login-btn, body #cadastro-btn {
     width: 30%;
+  }
+  body #nav-logo {
+    width: 10%;
   }
 }
 
@@ -130,6 +308,27 @@ body #logo-ntxt {
   }
   body .form-type select, body .account input {
     padding: 5px;
+  }
+  body .main-header {
+    height: auto;
+    padding: .5rem 1rem;
+  }
+  body .main-header .main-nav #nav-icon div {
+    display: none;
+  }
+  body .main-header .main-nav #menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    top: 0px;
+    left: none;
+  }
+  body .main-header .main-nav #menu .item-nav #subnav {
+    position: absolute;
+    left: 0px;
+    top: 3rem;
+    background-color: #e4c5e4;
   }
 }
 
@@ -152,6 +351,13 @@ body #logo-ntxt {
   body .form-type select, body .account input {
     font-size: 1.7em;
   }
+  body .arrow {
+    border-width: 0 5px 5px 0;
+    padding: 5px;
+  }
+  body .main-header .main-nav #menu .item-nav #subnav {
+    top: 4rem;
+  }
 }
 
 @media screen and (min-width: 1900px) {
@@ -165,6 +371,23 @@ body #logo-ntxt {
     margin-top: 20px;
     padding: 10px;
     border-radius: 10px;
+  }
+  body .arrow {
+    border-width: 0 8px 8px 0;
+    padding: 8px;
+  }
+  body .main-header {
+    padding: 1rem;
+  }
+  body .main-header .main-nav #menu .item-nav {
+    margin: 0 2rem;
+  }
+  body .main-header .main-nav #menu .item-nav #subnav {
+    left: 1rem;
+    top: 6rem;
+  }
+  body #menu li {
+    margin: 0 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
