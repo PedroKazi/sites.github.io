@@ -23,21 +23,26 @@
                     <a href="#" onclick="subToggle()">NOVO <i class="arrow up" id="mais"></i></a>
                     <ul id="subnav">
                         <li class="subitem"><a href="#">NOVO LIVRO</a></li>
-                        <li class="subitem"><a href="#">EM PROCESSO</a></li>
+                        <li class="subitem"><a href="em-processo.html">EM PROCESSO</a></li>
                     </ul>
                 </li>
-                <li class="item-nav"><a href="#">MEUS LIVROS</a></li>
+                <li class="item-nav"><a href="meus-livros.html">MEUS LIVROS</a></li>
                 <li class="item-nav"><a href="#">MEU PERFIL</a></li>
             </ul>
         </nav>
     </header>
     <div id="book-types">
-        <select name="tipos" id="tipos">
-            <option value="" style="width: 100%;">--Selecione--</option>
-            <option value="0">Conto</option>
+        <select name="tipos" id="tipos" onchange="toggleTipos()">
+            <option value="0">--Selecione--</option>
+            <option value="1">Conto</option>
+            <option value="2">audiobook</option>
+            <option value="3">quadrinho</option>
         </select>
         <div class="instructions">
-
+            <p id="arquivos">Selecione o tipo de livro que quer produzir</p>
+        </div>
+        <div class="button" id="send">
+            <a href="#">Enviar</a>
         </div>
     </div>
 </body>

@@ -67,6 +67,20 @@ body{
 
         transition: ease 300ms;
     }
+    .aprovar{
+        background-color: #CEE3C3;
+    }
+    .aprovar:hover{
+        background-color: #B7C9AD;
+        transition: ease 300ms;
+    }
+    .reprovar{
+        background-color: #E3ACAD;
+    }
+    .reprovar:hover{
+        background-color: #C9999A;
+        transition: ease 300ms;
+    }
     .form-type{
         display: inline-block;
         width: 50%;
@@ -187,6 +201,10 @@ body{
             list-style: none;
         }
     }
+    .avaliacao{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     #book-list{
         display: block;
         text-align: center;
@@ -244,6 +262,16 @@ body{
     #book-types{
         width: 100vw;
         display: block;
+
+        .instructions{
+            text-align: center;
+            padding: 1rem;
+            font-family: sans-serif;
+
+            #arquivos{
+                text-align: center;
+            }
+        }
     }
 
     #logo{
@@ -267,6 +295,20 @@ body{
     #tipos{
         width: 100%;
         margin: 0;
+        font-size: 1em;
+        padding: 1rem 0;
+        border: none;
+    }
+    #send{
+        width: 50%;
+        margin: auto;
+    }
+    #download1, #download2{
+        display: none;
+        margin: .5rem 0;
+    }
+    #download1.active, #download2.active{
+        display: grid;
     }
 }
 

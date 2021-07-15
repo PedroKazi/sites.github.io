@@ -78,6 +78,26 @@ body .button:hover {
   transition: ease 300ms;
 }
 
+body .aprovar {
+  background-color: #CEE3C3;
+}
+
+body .aprovar:hover {
+  background-color: #B7C9AD;
+  -webkit-transition: ease 300ms;
+  transition: ease 300ms;
+}
+
+body .reprovar {
+  background-color: #E3ACAD;
+}
+
+body .reprovar:hover {
+  background-color: #C9999A;
+  -webkit-transition: ease 300ms;
+  transition: ease 300ms;
+}
+
 body .form-type {
   display: inline-block;
   width: 50%;
@@ -216,6 +236,13 @@ body .main-header ul {
   list-style: none;
 }
 
+body .avaliacao {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
 body #book-list {
   display: block;
   text-align: center;
@@ -292,6 +319,16 @@ body #book-types {
   display: block;
 }
 
+body #book-types .instructions {
+  text-align: center;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+body #book-types .instructions #arquivos {
+  text-align: center;
+}
+
 body #logo {
   width: 50%;
   margin: auto;
@@ -318,6 +355,24 @@ body #nav-logo {
 body #tipos {
   width: 100%;
   margin: 0;
+  font-size: 1em;
+  padding: 1rem 0;
+  border: none;
+}
+
+body #send {
+  width: 50%;
+  margin: auto;
+}
+
+body #download1, body #download2 {
+  display: none;
+  margin: .5rem 0;
+}
+
+body #download1.active, body #download2.active {
+  display: -ms-grid;
+  display: grid;
 }
 
 @media screen and (orientation: landscape) {
