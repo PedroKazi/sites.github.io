@@ -17,8 +17,17 @@ function toggle() {
 
 function navToggle() {
     var nav = document.getElementById('menu')
+    var arrowBook = document.getElementsByClassName('hide')
 
     nav.classList.toggle("active")
+
+    for (let i = 0; i < arrowBook.length; i++) {
+        if (arrowBook[i].style.display == "none") {
+            arrowBook[i].style.display = "inline-block"
+        } else {
+            arrowBook[i].style.display = "none"
+        }
+    }
 }
 
 function subToggle() {
@@ -38,8 +47,12 @@ function subToggle() {
     }
 }
 
-function bookToggle(book) {
+function bookToggle(book, arrow) {
     var livro = document.getElementById(book)
+    var arrow = document.getElementById(arrow)
 
     livro.classList.toggle('active')
+    arrow.classList.toggle('up')
+    arrow.classList.toggle('down')
+    
 }

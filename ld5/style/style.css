@@ -17,14 +17,20 @@ body .arrow {
   padding: 3px;
 }
 
+body .hide {
+  display: inline-block;
+}
+
 body .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  margin-bottom: 3px;
 }
 
 body .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+  margin-bottom: 0;
 }
 
 body .center {
@@ -162,7 +168,7 @@ body .main-header .main-nav #menu {
 }
 
 body .main-header .main-nav #menu .item-nav {
-  padding: 1rem 0;
+  padding: 1rem 10px;
   margin: 0 1rem;
 }
 
@@ -171,20 +177,23 @@ body .main-header .main-nav #menu .item-nav #subnav {
 }
 
 body .main-header .main-nav #menu .item-nav #subnav .subitem {
-  padding: 1rem 0;
-  margin: 0 1rem;
+  padding: 1rem;
+}
+
+body .main-header .main-nav #menu .item-nav #subnav .subitem:hover {
+  background-color: #c5a3c5;
+  -webkit-transition: ease 300ms;
+  transition: ease 300ms;
 }
 
 body .main-header .main-nav #menu .item-nav #subnav.active {
   display: block;
 }
 
-body .main-header .main-nav #menu .item-nav #mais.up {
-  margin-bottom: 0;
-}
-
-body .main-header .main-nav #menu .item-nav #mais.down {
-  margin-bottom: 3px;
+body .main-header .main-nav #menu .item-nav:hover {
+  background-color: #c5a3c5;
+  -webkit-transition: ease 300ms;
+  transition: ease 300ms;
 }
 
 body .main-header .main-nav #menu li, body .main-header .main-nav #menu a {
@@ -230,6 +239,13 @@ body #book-list .book .book-btn p {
   color: #717070;
 }
 
+body #book-list .book .book-btn:hover {
+  cursor: pointer;
+  background-color: #c5a3c5;
+  -webkit-transition: ease 300ms;
+  transition: ease 300ms;
+}
+
 body #book-list .book .description {
   display: none;
   -webkit-box-align: center;
@@ -239,6 +255,7 @@ body #book-list .book .description {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 1rem;
+  margin: auto;
 }
 
 body #book-list .book .description .capa {
@@ -341,6 +358,9 @@ body #nav-logo {
   }
   body .form-type select, body .account input {
     font-size: 1.5em;
+  }
+  body #book-list .book .description {
+    width: 80%;
   }
 }
 
