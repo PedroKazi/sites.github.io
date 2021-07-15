@@ -287,6 +287,11 @@ body #book-list .book #book2.active {
   display: flex;
 }
 
+body #book-types {
+  width: 100vw;
+  display: block;
+}
+
 body #logo {
   width: 50%;
   margin: auto;
@@ -308,6 +313,11 @@ body #logo-ntxt {
 
 body #nav-logo {
   width: 20%;
+}
+
+body #tipos {
+  width: 100%;
+  margin: 0;
 }
 
 @media screen and (orientation: landscape) {

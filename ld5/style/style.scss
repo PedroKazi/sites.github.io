@@ -241,6 +241,10 @@ body{
             }
         }
     }
+    #book-types{
+        width: 100vw;
+        display: block;
+    }
 
     #logo{
         width: 50%;
@@ -259,6 +263,10 @@ body{
     }
     #nav-logo{
         width: 20%;
+    }
+    #tipos{
+        width: 100%;
+        margin: 0;
     }
 }
 

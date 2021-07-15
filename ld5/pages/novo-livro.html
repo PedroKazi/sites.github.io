@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Novo Livro</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="wrapper" id="nav-logo">
+            <img src="../img/logo-no-text.png" alt="logo">
+        </div>
+        <nav class="main-nav">
+            <div id="nav-icon" onclick="navToggle()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="menu">
+                <li class="item-nav" id="novo">
+                    <a href="#" onclick="subToggle()">NOVO <i class="arrow up" id="mais"></i></a>
+                    <ul id="subnav">
+                        <li class="subitem"><a href="#">NOVO LIVRO</a></li>
+                        <li class="subitem"><a href="#">EM PROCESSO</a></li>
+                    </ul>
+                </li>
+                <li class="item-nav"><a href="#">MEUS LIVROS</a></li>
+                <li class="item-nav"><a href="#">MEU PERFIL</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="book-types">
+        <select name="tipos" id="tipos">
+            <option value="" style="width: 100%;">--Selecione--</option>
+            <option value="0">Conto</option>
+        </select>
+        <div class="instructions">
+
+        </div>
+    </div>
+</body>
+<script src="../java/script.js"></script>
+</html>
