@@ -98,6 +98,11 @@ body .reprovar:hover {
   transition: ease 300ms;
 }
 
+body .medium {
+  width: 80%;
+  margin: auto;
+}
+
 body .form-type {
   display: inline-block;
   width: 50%;
@@ -329,6 +334,71 @@ body #book-types .instructions #arquivos {
   text-align: center;
 }
 
+body #perfil {
+  width: 100%;
+}
+
+body #perfil #dados {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1em;
+  margin: 1rem 0;
+}
+
+body #perfil #dados p {
+  margin: .5rem 0;
+}
+
+body #perfil #mudar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body #nova-senha {
+  width: 100%;
+  text-align: center;
+}
+
+body #nova-senha form {
+  width: 80%;
+  display: block;
+  margin: auto;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+body #nova-senha form .form-input {
+  margin-top: 10px;
+}
+
+body #nova-senha form .form-input input {
+  width: 100%;
+  padding: .5rem;
+  border: none;
+}
+
+body #nova-senha form button {
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  background-color: #e4c5e4;
+  padding: 5px;
+  font-family: sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #717070;
+  border-radius: 5px;
+}
+
+body #nova-senha form button:hover {
+  background-color: #c5a3c5;
+  cursor: pointer;
+  -webkit-transition: ease 300ms;
+  transition: ease 300ms;
+}
+
 body #logo {
   width: 50%;
   margin: auto;
@@ -412,6 +482,12 @@ body #download1.active, body #download2.active {
     top: 3rem;
     background-color: #e4c5e4;
   }
+  body #nova-senha form {
+    width: 50%;
+  }
+  body #nova-senha form .form-input input {
+    padding: .5rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -426,6 +502,15 @@ body #download1.active, body #download2.active {
   }
   body #book-list .book .description {
     width: 80%;
+  }
+  body #nova-senha form {
+    width: 50%;
+  }
+  body #nova-senha form .form-input {
+    font-size: 1.5em;
+  }
+  body #nova-senha form .form-input input {
+    font-size: 1.1em;
   }
 }
 
@@ -470,6 +555,9 @@ body #download1.active, body #download2.active {
   body .main-header .main-nav #menu .item-nav #subnav {
     left: 1rem;
     top: 6rem;
+  }
+  body #nova-senha form .form-input input {
+    padding: 1.5rem;
   }
   body #menu li {
     margin: 0 2rem;

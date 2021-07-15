@@ -81,6 +81,10 @@ body{
         background-color: #C9999A;
         transition: ease 300ms;
     }
+    .medium{
+        width: 80%;
+        margin: auto;
+    }
     .form-type{
         display: inline-block;
         width: 50%;
@@ -273,6 +277,62 @@ body{
             }
         }
     }
+    #perfil{
+        width: 100%;
+        #dados{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 1em;
+            margin: 1rem 0;
+
+            p{
+                margin: .5rem 0 ;
+            }
+        }
+        #mudar{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    #nova-senha{
+        width: 100%;
+        text-align: center;
+        
+        form{
+            width: 80%;
+            display: block;
+            margin: auto;
+            font-family: sans-serif;
+            font-size: 1em;
+
+            .form-input{
+                margin-top: 10px;
+                input{
+                    width: 100%;
+                    padding: .5rem;
+                    border: none;
+                }
+            }
+            button{
+                width: 100%;
+                margin-top: 10px;
+                border: none;
+                background-color: #e4c5e4;
+                padding: 5px;
+                font-family: sans-serif;
+                font-size: 1em;
+                font-weight: bold;
+                color: #717070;
+                border-radius: 5px;
+            }
+            button:hover{
+                background-color: #c5a3c5;
+                cursor: pointer;
+    
+                transition: ease 300ms;
+            }
+        }
+    }
 
     #logo{
         width: 50%;
@@ -358,6 +418,16 @@ body{
                 }
             }
         }
+        #nova-senha{
+            form{
+                width: 50%;
+                .form-input{
+                    input{
+                        padding: .5rem;
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (min-width: 992px) {
@@ -380,6 +450,17 @@ body{
                 }
             }
         }
+        #nova-senha{
+            form{
+                width: 50%;
+                .form-input{
+                    font-size: 1.5em;
+                    input{
+                        font-size: 1.1em;
+                    }
+                }
+            }
+        }
     }
 }
 @media screen and (min-width: 1200px) {
@@ -399,6 +480,14 @@ body{
                         #subnav{
                             top: 4rem;
                         }
+                    }
+                }
+            }
+        }
+        #nova-senha{
+            form{
+                .form-input{
+                    input{
                     }
                 }
             }
@@ -433,6 +522,15 @@ body{
                             left: 1rem;
                             top: 6rem;
                         }
+                    }
+                }
+            }
+        }
+        #nova-senha{
+            form{
+                .form-input{
+                    input{
+                        padding: 1.5rem;
                     }
                 }
             }

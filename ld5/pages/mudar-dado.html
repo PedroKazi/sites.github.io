@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
-    <title>Novo Livro</title>
+    <title>Mudar dados</title>
 </head>
 <body>
     <header class="main-header">
@@ -22,7 +22,7 @@
                 <li class="item-nav" id="novo">
                     <a href="#" onclick="subToggle()">NOVO <i class="arrow up" id="mais"></i></a>
                     <ul id="subnav">
-                        <li class="subitem"><a href="#">NOVO LIVRO</a></li>
+                        <li class="subitem"><a href="novo-livro.html">NOVO LIVRO</a></li>
                         <li class="subitem"><a href="em-processo.html">EM PROCESSO</a></li>
                     </ul>
                 </li>
@@ -31,19 +31,18 @@
             </ul>
         </nav>
     </header>
-    <div id="book-types">
-        <select name="tipos" id="tipos" onchange="toggleTipos()">
-            <option value="0">--Selecione--</option>
-            <option value="1">Conto</option>
-            <option value="2">audiobook</option>
-            <option value="3">quadrinho</option>
-        </select>
-        <div class="instructions">
-            <p id="arquivos">Selecione o tipo de livro que quer produzir</p>
-        </div>
-        <div class="button" id="send">
-            <a href="#">Enviar</a>
-        </div>
+    <div id="nova-senha">
+        <form action="">
+            <div class="form-input">
+                <label for="cpf-cnpjA">CPF Antigo</label>
+                <input type="text" name="cpf-cnpjA" id="cpf-cnpjA">
+            </div>
+            <div class="form-input">
+                <label for="cpf-cnpjN">CPF Novo</label>
+                <input name="cpf-cnpjN" type="text" id="cpf-cnpjN">
+            </div>
+            <button type="submit">Mudar</button>
+        </form>
     </div>
 </body>
 <script src="../java/script.js"></script>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
-    <title>Novo Livro</title>
+    <title>Meu Perfil</title>
 </head>
 <body>
     <header class="main-header">
@@ -22,27 +22,27 @@
                 <li class="item-nav" id="novo">
                     <a href="#" onclick="subToggle()">NOVO <i class="arrow up" id="mais"></i></a>
                     <ul id="subnav">
-                        <li class="subitem"><a href="#">NOVO LIVRO</a></li>
+                        <li class="subitem"><a href="novo-livro.html">NOVO LIVRO</a></li>
                         <li class="subitem"><a href="em-processo.html">EM PROCESSO</a></li>
                     </ul>
                 </li>
                 <li class="item-nav"><a href="meus-livros.html">MEUS LIVROS</a></li>
-                <li class="item-nav"><a href="meu-perfil.html">MEU PERFIL</a></li>
+                <li class="item-nav"><a href="#">MEU PERFIL</a></li>
             </ul>
         </nav>
     </header>
-    <div id="book-types">
-        <select name="tipos" id="tipos" onchange="toggleTipos()">
-            <option value="0">--Selecione--</option>
-            <option value="1">Conto</option>
-            <option value="2">audiobook</option>
-            <option value="3">quadrinho</option>
-        </select>
-        <div class="instructions">
-            <p id="arquivos">Selecione o tipo de livro que quer produzir</p>
+    <div class="center" id="perfil">
+        <div id="dados">
+            <p>NOME: fulano de tal</p>
+            <p>CPF/CNPJ: xxx.xxx.xxx.xx</p>
         </div>
-        <div class="button" id="send">
-            <a href="#">Enviar</a>
+        <div id="mudar">
+            <div class="button medium">
+                <a href="mudar-dado.html">Mudar cpf/cnpj</a>
+            </div>
+            <div class="button medium">
+                <a href="mudar-senha.html">Mudar senha</a>
+            </div>
         </div>
     </div>
 </body>
