@@ -8,26 +8,57 @@
     <title>Clemente Nascimento</title>
 </head>
 <body>
-    <div class="pg" id="clear">
-        <div id="nome">
-            <h1>CLEMENTE NASCIMENTO</h1>
-        </div>
-    </div>
-    <div class="pg" id="links">
-        <div id="title">
-            <h3>UMA BIOGRAFIA</h3>
-        </div>
-        <div id="description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, provident. Dolores enim quam nulla nostrum molestiae rerum magnam dicta, delectus doloremque tenetur itaque, soluta facere est nesciunt ea, asperiores explicabo?</p>
-        </div>
-        <div id="icons">
-            <div class="wrapper" id="logo-lc">
-                <a href="#" target="blank"><img src="img/logo-lc.png" alt="Livraria cultura"></a>
+    <header id="main-header">
+        <nav id="main-nav">
+            <ul>
+                <li class="nav-item"><a href="#desc">Descrição</a></li>
+                <li class="nav-item"><a href="#autor">Autor</a></li>
+                <li class="nav-item"><a href="#links">Comprar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="desc">
+            <div class="wrapper" id="capa">
+                <img src="img/capa.jpg" alt="Capa">
             </div>
-            <div class="wrapper" id="logo-kobo">
-                <a href="#" target="blank"><img src="img/4 - RKobo_CMYK-1.png" alt="Kobo"></a>
+            <div class="text-box" id="desc-text">
+                <h1>Clemente Nascimento</h1>
+                <h3>Uma biografia</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate sapiente corrupti? Harum, totam aut. Labore eius beatae porro suscipit non repudiandae magni amet laudantium, maiores possimus dolorum, soluta commodi.</p>
             </div>
-        </div>
+        </section>
+        <section id="autor">
+            <div class="text-box" id="autor-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis repellendus odio at sapiente ut? Ratione magni quaerat similique sapiente optio voluptate, aliquid cum sed, labore cupiditate quod ipsam nobis dolorem.</p>
+            </div>
+            <div class="wrapper" id="perfil">
+                <img src="img/clemente_kiss_fm.png" alt="autor">
+            </div>
+        </section>
+        <section id="links">
+            <div class="wrapper" id="kobo">
+                <a href="#">
+                    <img src="img/kobo-white.png" alt="kobo">
+                </a>
+            </div>
+            <div class="wrapper" id="lc">
+                <a href="#">
+                    <img src="img/cultura-white.png" alt="livraria cultura">
+                </a>
+            </div>
+            <div class="wrapper" id="sara">
+                <a href="#">
+                    <img src="img/saraiva-white.png" alt="saraiva">
+                </a>
+            </div>
+            <div class="wrapper" id="amazon">
+                <a href="#">
+                    <img src="img/amazon-white.png" alt="amazon">
+                </a>
+            </div>
+        </section>
     </div>
 </body>
+<script src="script.js"></script>
 </html>

@@ -140,7 +140,7 @@ body{
                 }
             }
         }
-        #desc, #autor{
+        #autor{
             display: block;
             padding-top: 40%;
             align-items: center;
@@ -154,6 +154,13 @@ body{
         #perfil{
             width: 40%;
             margin: auto;
+        }
+
+        #desc{
+            display: block;
+            padding-top: 20%;
+            align-items: center;
+            height: calc(100vh - 20vw);
         }
         
         #links{
