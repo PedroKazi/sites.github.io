@@ -1,543 +1,163 @@
-body{
-    background-color: #eaeaea;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-    *{
-        margin: 0;
-        padding: 0;
+*{
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin: 0;
+    background-color: #f8f8f8;
+    height: 100vh;
+
+    .container{
+        width: 100%;
+        height: 100%;
+        overflow-y: hidden;
+        scroll-behavior: smooth;
+
+        section{
+            height: 100vh;
+        }
+    }
+    .button{
+        background-color: #e4c5e4;
+        text-align: center;
+        padding: .5rem;
+        border-radius: 10px;
+        margin: 1rem auto;
+        width: 100%;
         box-sizing: border-box;
+
+        a{
+            color: #555555;
+            text-decoration: none;
+            font-weight: bold;
+        }
     }
-    .arrow {
-        border: solid #717070;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 3px;
+    
+    #login-sect{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .form-choice{
+            width: 80%;
+
+            .buttons{
+                width: 100%;
+                display: block;
+                margin: auto;
+            }
+        }
     }
-    .hide{
-        display: inline-block;
+    #main-logo{
+        width: 100%;
+        margin: auto;
     }
-    .down {
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        margin-bottom: 3px;
+
+    #entry-sect{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        a{
+            width: 10%;
+            position: absolute;
+            top: 20px;
+            animation:arrowBob;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        #forms{
+            width: 80%;
+            #login-choice, #cadastro-choice{
+                display: none;
+                select, input, button{
+                    width: 100%;
+                    padding: .5rem;
+                    box-sizing: border-box;
+                }
+                select, input{
+                    margin-bottom: 1rem;
+                }
+                button{
+                    border: none;
+                    border-radius: 10px;
+                    background-color: #e4c5e4;
+                    font-weight: bold;
+                }
+
+                .login-form{
+                    display: none;
+                }
+            }
+            #login-choice.active, #cadastro-choice.active, #login-cpf-form.active, #login-cnpj-form.active, #cadastro-cpf-form.active, #cadastro-cnpj-form.active{
+                display: block;
+            }
+        }
     }
-    .up {
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-        margin-bottom: 0;
-    }
-    .center {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
+
     .wrapper{
         img{
             max-width: 100%;
             width: 100%;
         }
     }
-    .pg{
-        width: 100vw;
-    }
-    .container{
-        width: 100%;
-        text-align: center;
-    }
-    .button{
-        background-color: #e4c5e4;
-        padding: .5rem;
-        border-radius: 5px;
-        text-align: center;
-
-        a{
-            color: #717070;
-            text-decoration: none;
-            font-family: sans-serif;
-            font-weight: bold;
-            font-size: 1em;
-        }
-    }
-    .button:hover{
-        cursor: pointer;
-        background-color: #c5a3c5;
-
-        transition: ease 300ms;
-    }
-    .aprovar{
-        background-color: #CEE3C3;
-    }
-    .aprovar:hover{
-        background-color: #B7C9AD;
-        transition: ease 300ms;
-    }
-    .reprovar{
-        background-color: #E3ACAD;
-    }
-    .reprovar:hover{
-        background-color: #C9999A;
-        transition: ease 300ms;
-    }
-    .medium{
-        width: 80%;
-        margin: auto;
-    }
-    .form-type{
-        display: inline-block;
-        width: 50%;
-        text-align: left;
-
-        select{
-            display: block;
-            width: 100%;
-            font-family: sans-serif;
-            font-size: 1em;
-            font-weight: bold;
-            border: none;
-            margin: auto;
-            margin-top: 10px;
-        }
-    }
-    .account{
-        width: 50%;
-        margin: auto;
-        text-align: left;
-        
-        max-height: 0px;
-        overflow: hidden;
-        color: #717070;
-        
-        .form-input{
-            margin-top: 10px;
-            font-family: sans-serif;
-            font-size: 1em;
-            font-weight: bold;
-            input{
-                width: 100%;
-                font-size: 1em;
-            }
-        }
-        button{
-            width: 100%;
-            margin-top: 10px;
-            border: none;
-            background-color: #e4c5e4;
-            padding: 5px;
-            font-family: sans-serif;
-            font-size: 1em;
-            font-weight: bold;
-            color: #717070;
-            border-radius: 5px;
-        }
-        button:hover{
-            background-color: #c5a3c5;
-            cursor: pointer;
-
-            transition: ease 300ms;
-        }
-    }
-    .main-header{
-        padding: 1rem;
-        height: 70px;
-        background-color: #e4c5e4;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        .main-nav{
-            #nav-icon{
-                div {
-                    width: 35px;
-                    height: 5px;
-                    background-color: black;
-                    margin: 6px 0;
-                }
-            }
-            #menu{
-                position: absolute;
-                width: 100%;
-                left: 0px;
-                top: 70px;
-                background-color: #e4c5e4;
-                display: none;
-                .item-nav{
-                    padding: 1rem 10px;
-                    margin: 0 1rem;
-                    #subnav{
-                        display: none;
-                        .subitem{
-                            padding: 1rem ;
-                        }
-                        .subitem:hover{
-                            background-color: #c5a3c5;
-
-                            transition: ease 300ms;
-                        }
-                    }
-                    #subnav.active{
-                        display: block;
-                    }
-                }
-                .item-nav:hover{
-                    background-color: #c5a3c5;
-            
-                    transition: ease 300ms;
-                }
-                li, a{
-                    text-decoration: none;
-                    color: #717070;
-                    font-family: sans-serif;
-                    font-weight: bold;
-                    font-size: 1em;
-                }
-                #novo.padbot{
-                    padding-bottom: 0;
-                }
-            }
-            #menu.active{
-                display: block;
-            }
-        }
-        ul{
-            list-style: none;
-        }
-    }
-    .avaliacao{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    #book-list{
-        display: block;
-        text-align: center;
-        width: 100%;
-        .book{
-            width: 90%;
-            margin: 1rem 5%;
-            .book-btn{
-                background-color: #e4c5e4;
-                border-radius: 20px;
-    
-                p{
-                    font-family: sans-serif;
-                    font-weight: bold;
-                    font-size: 1em;
-                    color: #717070;
-                }
-            }
-            .book-btn:hover{
-                cursor: pointer;
-                background-color: #c5a3c5;
-        
-                transition: ease 300ms;
-            }
-            .description{
-                display: none;
-                align-items: center;
-                justify-content: center;
-                padding: 1rem;
-                margin: auto;
-    
-                .capa{
-                    width: 45%;
-                }
-                .text{
-                    width: 55%;
-                    padding-left: 1rem;
-    
-                    h1, p{
-                        font-family: sans-serif;
-                    }
-                    p{
-                        text-align: justify;
-                    }
-                }
-            }
-            #book1.active{
-                display: flex;
-            }
-            #book2.active{
-                display: flex;
-            }
-        }
-    }
-    #book-types{
-        width: 100vw;
-        display: block;
-
-        .instructions{
-            text-align: center;
-            padding: 1rem;
-            font-family: sans-serif;
-
-            #arquivos{
-                text-align: center;
-            }
-        }
-    }
-    #perfil{
-        width: 100%;
-        #dados{
-            text-align: center;
-            font-family: sans-serif;
-            font-size: 1em;
-            margin: 1rem 0;
-
-            p{
-                margin: .5rem 0 ;
-            }
-        }
-        #mudar{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-    #nova-senha{
-        width: 100%;
-        text-align: center;
-        
-        form{
-            width: 80%;
-            display: block;
-            margin: auto;
-            font-family: sans-serif;
-            font-size: 1em;
-
-            .form-input{
-                margin-top: 10px;
-                input{
-                    width: 100%;
-                    padding: .5rem;
-                    border: none;
-                }
-            }
-            button{
-                width: 100%;
-                margin-top: 10px;
-                border: none;
-                background-color: #e4c5e4;
-                padding: 5px;
-                font-family: sans-serif;
-                font-size: 1em;
-                font-weight: bold;
-                color: #717070;
-                border-radius: 5px;
-            }
-            button:hover{
-                background-color: #c5a3c5;
-                cursor: pointer;
-    
-                transition: ease 300ms;
-            }
-        }
-    }
-
-    #logo{
-        width: 50%;
-        margin: auto;
-    }
-    #login-btn, #cadastro-btn{
-        width: 50%;
-        margin: auto;
-    }
-    #cadastro-btn{
-        margin-top: 10px;
-    }
-    #logo-ntxt{
-        width: 30%;
-        margin: auto;
-    }
-    #nav-logo{
-        width: 20%;
-    }
-    #tipos{
-        width: 100%;
-        margin: 0;
-        font-size: 1em;
-        padding: 1rem 0;
-        border: none;
-    }
-    #send{
-        width: 50%;
-        margin: auto;
-    }
-    #download1, #download2{
-        display: none;
-        margin: .5rem 0;
-    }
-    #download1.active, #download2.active{
-        display: grid;
-    }
 }
 
 @media screen and (orientation: landscape) {
     body{
-        #logo, #login-btn, #cadastro-btn{
-            width: 30%;
+        #login-sect{
+            .form-choice{
+                width: 35%;
+            }
         }
-        #nav-logo{
-            width: 10%;
+        #entry-sect{
+            #forms{
+                width: 35%;
+            }
+            a{
+                width: 5%;
+            }
         }
     }
 }
 @media screen and (min-width: 768px) {
     body{
-        #logo, #cadastro-btn, #login-btn{
-            width: 30%;
-        }
-        .form-type select, .account input{
-            padding: 5px;
-        }
-        .main-header{
-            height: auto;
-            padding: .5rem 1rem;
-            .main-nav{
-                #nav-icon{
-                    div{
-                        display: none;
-                    }
-                }
-                #menu{
-                    display: flex;
-                    position: relative;
-                    top: 0px;
-                    left: none;
-                    .item-nav{
-                        #subnav{
-                            position: absolute;
-                            left: 0px;
-                            top: 3rem;
-                            background-color: #e4c5e4;
-                            .subitem{
-
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        #nova-senha{
-            form{
-                width: 50%;
-                .form-input{
-                    input{
-                        padding: .5rem;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (min-width: 992px) {
-    body{
-        .button{
-            a{
-                font-size: 1.5em;
-            }
-        }
-        .account{
-            font-size: 1.5em;
-        }
-        .form-type select, .account input{
-            font-size: 1.5em;
-        }
-        #book-list{
-            .book{
-                .description{
-                    width: 80%;
-                }
-            }
-        }
-        #nova-senha{
-            form{
-                width: 50%;
-                .form-input{
-                    font-size: 1.5em;
-                    input{
-                        font-size: 1.1em;
-                    }
-                }
-            }
-        }
     }
 }
 @media screen and (min-width: 1200px) {
     body{
-        font-size: 1.7em;
-        .form-type select, .account input{
-            font-size: 1.7em;
-        }
-        .arrow {
-            border-width: 0 5px 5px 0;
-            padding: 5px;
-        }
-        .main-header{
-            .main-nav{
-                #menu{
-                    .item-nav{
-                        #subnav{
-                            top: 4rem;
-                        }
-                    }
-                }
-            }
-        }
-        #nova-senha{
-            form{
-                .form-input{
-                    input{
-                    }
-                }
-            }
+        font-size: 1.5em;
+
+        select, button, input{
+            font-size: 1.3em;
         }
     }
 }
 @media screen and (min-width: 1900px) {
     body{
-        font-size: 3em;
-        .form-type select, .account input{
-            font-size: 3em;
-        }
-        .account{
-            button{
-                margin-top: 20px;
-                padding: 10px;
-                border-radius: 10px;
-            }
-        }
-        .arrow {
-            border-width: 0 8px 8px 0;
-            padding: 8px;
-        }
-        .main-header{
-            padding: 1rem;
-            .main-nav{
-                #menu{
-                    .item-nav{
-                        margin: 0 2rem;
-
-                        #subnav{
-                            left: 1rem;
-                            top: 6rem;
-                        }
-                    }
-                }
-            }
-        }
-        #nova-senha{
-            form{
-                .form-input{
-                    input{
-                        padding: 1.5rem;
-                    }
-                }
-            }
+        font-size: 2em;
+        .button{
+            padding: 1.5rem;
         }
 
-        #menu li{
-            margin: 0 2rem;
+        button, input, select, svg{
+            font-size: 1.7em;
         }
+    }
+}
+
+@keyframes arrowBob {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(50%);
+    }
+    100%{
+        transform: translateY(0);
     }
 }

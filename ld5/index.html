@@ -5,21 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
-    <title>LD5 Livros</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>LD5 Entreterimento</title>
 </head>
 <body>
-    <div class="pg">
-        <div class="container center">
-            <div class="wrapper" id="logo">
-                <img src="img/logo.png" alt="logo">
+    <div class="container">
+        <section id="login-sect">
+            <div class="form-choice">
+                <div class="wrapper" id="main-logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="buttons">
+                    <div class="button"><a onclick="loginFormShow()" href="#entry-sect">LOGIN</a></div>
+                    <div class="button"><a onclick="cadFormShow()" href="#entry-sect">CADASTRO</a></div>
+                </div>
             </div>
-            <div class="button" id="login-btn">
-                <a href="pages/login.html">Login</a>
+        </section>
+        <section id="entry-sect">
+            <a onclick="setaVolta()" id="seta" href="#login-sect">
+                <div class="wrapper">
+                    <img src="img/outline_arrow_upward_black_24dp.png" alt="voltar">
+                </div>
+            </a>
+            <div id="forms">
+                <div id="login-choice">
+                    <select onchange="typeSelectLogin(this.value)" name="login" id="login-select">
+                        <option value="0">--Selecione--</option>
+                        <option value="1">Autor</option>
+                        <option value="2">Editora</option>
+                    </select>
+                    <div class="login-form" id="login-cpf-form">
+                        <form action="">
+                            <label for="cpf">CPF</label>
+                            <input name="cpf" type="text" maxlength="14" id="login-cpf">
+                            <label for="senha-cpf">SENHA</label>
+                            <input name="senha-cpf" type="password" id="login-senha-cpf">
+                            <button type="submit">LOGIN</button>
+                        </form>
+                    </div>
+                    <div class="login-form" id="login-cnpj-form">
+                        <form action="">
+                            <label for="cnpj">CNPJ</label>
+                            <input name="cnpj" type="text" maxlength="18" id="login-cnpj">
+                            <label for="senha-cpf">SENHA</label>
+                            <input name="senha-cpf" type="password" id="login-senha-cnpj">
+                            <button type="submit">LOGIN</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="cadastro-choice">
+                    <select onchange="typeSelectCad(this.value)" name="cadastro" id="cadastro">
+                        <option value="0">--Selecione--</option>
+                        <option value="1">Autor</option>
+                        <option value="2">Editora</option>
+                    </select>
+                    <div class="login-form" id="cadastro-cpf-form">
+                        <form action="">
+                            <label for="cadastro-cpf">CPF</label>
+                            <input name="cadastro-cpf" type="text" maxlength="14" id="cadastro-cpf">
+                            <label for="cadastro-senha-cnpj">SENHA</label>
+                            <input name="cadastro-senha-cnpj" type="password" id="cadastro-senha-cnpj">
+                            <button type="submit">CADASTRAR</button>
+                        </form>
+                    </div>
+                    <div class="login-form" id="cadastro-cnpj-form">
+                        <form action="">
+                            <label for="cnpj">CNPJ</label>
+                            <input name="cnpj" type="text" maxlength="18" id="cnpj">
+                            <label for="senha-cnpj">SENHA</label>
+                            <input name="senha-cnpj" type="password" id="senha-cnpj">
+                            <button type="submit">CADASTRAR</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="button" id="cadastro-btn">
-                <a href="pages/cadastro.html">Cadastro</a>
-            </div>
-        </div>
+        </section>
     </div>
 </body>
+<script src="java/script.js"></script>
 </html>
