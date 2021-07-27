@@ -526,6 +526,14 @@ body .wrapper img {
     padding-top: calc(70px + 2rem);
     height: calc(100vh - 70px - 2rem);
   }
+  body #analise {
+    padding-top: calc(70px + 2rem);
+    height: calc(100vh - 70px - 2rem);
+  }
+  body #comm {
+    padding-top: calc(70px + 2rem);
+    height: calc(100vh - 70px - 2rem);
+  }
   body .content .livros {
     -ms-grid-columns: 21.25% 21.25% 21.25% 21.25%;
         grid-template-columns: 21.25% 21.25% 21.25% 21.25%;
@@ -566,6 +574,26 @@ body .wrapper img {
   body #meu-perfil {
     padding-top: calc(70px + 6rem);
     height: calc(100vh - 70px - 6rem);
+  }
+  body #analise {
+    padding-top: calc(70px + 6rem);
+    height: calc(100vh - 70px - 6rem);
+  }
+  body #comm {
+    padding-top: calc(70px + 6rem);
+    height: calc(100vh - 70px - 6rem);
+  }
+  body #comm .comment {
+    display: block;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+  body #comm .comment p, body #comm .comment textarea, body #comm .comment button {
+    width: 100%;
+  }
+  body #comm .comment textarea {
+    font-size: 1.7em;
   }
   body .content .livros {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

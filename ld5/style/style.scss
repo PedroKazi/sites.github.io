@@ -456,6 +456,15 @@ body{
             height: calc(100vh - 70px - 2rem);
         }
 
+        #analise{
+            padding-top: calc(70px + 2rem);
+            height: calc(100vh - 70px - 2rem);
+        }
+        #comm{
+            padding-top: calc(70px + 2rem);
+            height: calc(100vh - 70px - 2rem);
+        }
+
         .content{
             .livros{
                 grid-template-columns: 21.25% 21.25% 21.25% 21.25%;
@@ -507,6 +516,29 @@ body{
         #meu-perfil{
             padding-top: calc(70px + 6rem);
             height: calc(100vh - 70px - 6rem);
+        }
+
+        #analise{
+            padding-top: calc(70px + 6rem);
+            height: calc(100vh - 70px - 6rem);
+        }
+        #comm{
+            padding-top: calc(70px + 6rem);
+            height: calc(100vh - 70px - 6rem);
+    
+            .comment{
+                display: block;
+                width: 50%;
+                text-align: center;
+                margin: auto;
+    
+                p, textarea, button{
+                    width: 100%;
+                }
+                textarea{
+                    font-size: 1.7em;
+                }
+            }
         }
 
         .content{
