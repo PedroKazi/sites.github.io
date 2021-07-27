@@ -8,6 +8,7 @@ body{
     margin: 0;
     background-color: #f8f8f8;
     height: 100vh;
+    position: relative;
 
     .container{
         width: 100%;
@@ -17,6 +18,8 @@ body{
 
         section{
             height: 100vh;
+            padding-top: 70px;
+            height: calc(100vh - 70px);
         }
     }
     .button{
@@ -54,7 +57,6 @@ body{
         width: 100%;
         margin: auto;
     }
-
     #entry-sect{
         display: flex;
         align-items: center;
@@ -99,6 +101,148 @@ body{
         }
     }
 
+    #main-header{
+        height: 70px;
+        margin: 0 1rem;
+        position: absolute;
+        #main-nav{
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            height: 70px;
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                position: absolute;
+                top: 70px;
+                right: -1rem;
+                width: 80%;
+                height: calc(100vh - 70px);
+                overflow: hidden;
+                display: none;
+                background-color: #f8f8f8de;
+
+                .nav-item{
+                    margin: 1rem 0;
+                    padding: 0 1rem;
+                    transform: translateX(100%);
+
+                    a{
+                        text-decoration: none;
+                        color: #555555;
+                        font-weight: bold;
+                    }
+                }
+                #nav-item1.animate{
+                    animation: mobileMenu 300ms;
+                    animation-fill-mode: forwards;
+                }
+                #nav-item2.animate{
+                    animation: mobileMenu 300ms;
+                    animation-delay: 100ms;
+                    animation-fill-mode: forwards;
+                }
+                #nav-item3.animate{
+                    animation: mobileMenu 300ms;
+                    animation-delay: 200ms;
+                    animation-fill-mode: forwards;
+                }
+            }
+            #nav-ul.active{
+                display: block;
+            }
+        }
+    }
+    #head-logo{
+        width: 20%;
+    }
+    #menu-icon{
+        div {
+            width: 35px;
+            height: 5px;
+            background-color: black;
+            margin: 6px 0;
+        }
+    }
+
+    .content{
+        display: block;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+
+        .livros{
+            width: 100%;
+            display: none;
+            grid-template-columns: 45% 45%;
+            gap: 10%;
+            margin-top: 1rem;
+
+            .capa{
+                margin: auto;
+            }
+        }
+        #content-meus-livros, #content-processo{
+            overflow-y: scroll;
+            height: 80vh;
+        }
+        #content-meus-livros.active, #content-processo.active{
+            display: grid;
+        }
+        #radios{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    .radio{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+
+        input{
+            display: none;
+        }
+        input:checked + .radio__radio::after{
+            transform: scale(1);
+        }
+    }
+    .radio__radio{
+        width: 1em;
+        height: 1em;
+        border: 2px solid #555555;
+        border-radius: 50%;
+        margin-right: 10px;
+        box-sizing: border-box;
+        padding: 2px;
+    }
+    .radio__radio::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: #555555;
+        border-radius: 50%;
+        transform: scale(0);
+
+        transition: transform 0.15s;
+    }
+
+    #meus-livros{
+    }
+    #novo-livro{
+
+        select{
+            width: 100%;
+        }
+        p{
+            text-align: justify;
+        }
+    }
+    #meu-perfil{
+    }
+
     .wrapper{
         img{
             max-width: 100%;
@@ -122,10 +266,76 @@ body{
                 width: 5%;
             }
         }
+
+        .content{
+            .livros{
+                grid-template-columns: 26% 26% 26%;
+            }
+            #content-meus-livros, #content-processo{
+                height: 60vh;
+            }
+        }
+
+        #main-header{
+            width: 100%;
+            margin: 0;
+            #main-nav{
+                ul{
+                    width: 60%;
+                    position:initial;
+                    display: flex;
+                    align-items: center;
+                    justify-content:space-evenly;
+                    background-color: #f8f8f800;
+                    height: auto;
+                    .nav-item{
+                        padding: 0;
+                        margin: 0 1rem;
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+        #head-logo{
+            width: 10%;
+            padding: 0 1rem;
+        }
+        #menu-icon{
+            display: none;
+        }
     }
 }
 @media screen and (min-width: 768px) {
     body{
+    }
+}
+@media screen and (min-width: 992px) {
+    body{
+
+        #main-header{
+            margin: .5rem 0;
+
+            #main-nav{
+                ul{
+                    width: 50%;
+                }
+            }
+        }
+
+        .content{
+            .livros{
+                grid-template-columns: 21.25% 21.25% 21.25% 21.25%;
+                gap: 5%;
+            }
+            #content-meus-livros, #content-processo{
+                height: 65vh;
+            }
+        }
+
+        #head-logo{
+            width: 8%;
+        }
+
     }
 }
 @media screen and (min-width: 1200px) {
@@ -134,6 +344,34 @@ body{
 
         select, button, input{
             font-size: 1.3em;
+        }
+
+        .container{
+            section{
+                padding-top: calc(70px + 2rem);
+                height: calc(100vh - 70px - 2rem);
+            }
+        }
+
+        .content{
+            .livros{
+                grid-template-columns: 21.25% 21.25% 21.25% 21.25%;
+                gap: 5%;
+            }
+            #content-meus-livros, #content-processo{
+                height: 65vh;
+            }
+        }
+
+        #main-header{
+            margin: 1rem 0;
+
+            #main-nav{
+                ul{
+                }
+            }
+        }
+        #head-logo{
         }
     }
 }
@@ -147,6 +385,35 @@ body{
         button, input, select, svg{
             font-size: 1.7em;
         }
+
+        .container{
+            section{
+                padding-top: calc(70px + 6rem);
+                height: calc(100vh - 70px - 6rem);
+            }
+        }
+
+        .content{
+            .livros{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+                gap: 2%;
+            }
+            #content-meus-livros, #content-processo{
+                height: 65vh;
+            }
+        }
+
+        #main-header{
+            padding: 3rem 0;
+
+            #main-nav{
+                ul{
+                    width: 40%;
+                }
+            }
+        }
+        #head-logo{
+        }
     }
 }
 
@@ -159,5 +426,13 @@ body{
     }
     100%{
         transform: translateY(0);
+    }
+}
+@keyframes mobileMenu {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
     }
 }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>LD5 - Página principal</title>
+</head>
+<body>
+    <header id="main-header">
+        <nav id="main-nav">
+            <div class="wrapper" id="head-logo">
+                <img src="img/logo-no-text.png" alt="LD5 entreterimento">
+            </div>
+            <div id="menu-icon" onclick="menuToggle()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul id="nav-ul">
+                <li id="nav-item1" class="nav-item"><a href="#meus-livros">MEUS LIVROS</a></li>
+                <li id="nav-item2" class="nav-item"><a href="#novo-livro">NOVO LIVRO</a></li>
+                <li id="nav-item3" class="nav-item"><a href="#meu-perfil">MEU PERFIL</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="meus-livros">
+            <div class="content">
+                <div id="radios">
+                    <label for="radio-meus-livros" class="radio">
+                        <input onchange="meusLivrosOpt()" type="radio" value="1" name="Meus-livros" id="radio-meus-livros">
+                        <div class="radio__radio"></div>
+                        Meus Livros
+                    </label>
+                    <label for="radio-processo" class="radio">
+                        <input onchange="meusLivrosOpt()" type="radio" value="2" name="Meus-livros" id="radio-processo">
+                        <div class="radio__radio" id="radio__dot"></div>
+                        Em Processo
+                    </label>
+                </div>
+                <div class="livros" id="content-meus-livros">
+                    <div class="wrapper capa">
+                        <a href="#">
+                            <img src="img/capa.jpg" alt="capa">
+                        </a>
+                    </div>
+                    <div class="wrapper capa">
+                        <a href="#">
+                            <img src="img/capa.jpg" alt="capa">
+                        </a>
+                    </div>
+                    <div class="wrapper capa">
+                        <a href="#">
+                            <img src="img/capa.jpg" alt="capa">
+                        </a>
+                    </div>
+                    <div class="wrapper capa">
+                        <a href="#">
+                            <img src="img/capa.jpg" alt="capa">
+                        </a>
+                    </div>
+                    <div class="wrapper capa">
+                        <a href="#">
+                            <img src="img/capa.jpg" alt="capa">
+                        </a>
+                    </div>
+                    <div class="wrapper capa">
+                        <a href="#">
+                            <img src="img/capa.jpg" alt="capa">
+                        </a>
+                    </div>
+                    <div class="wrapper capa">
+                        <a href="#">
+                            <img src="img/capa.jpg" alt="capa">
+                        </a>
+                    </div>
+                    <div class="wrapper capa">
+                        <a href="#">
+                            <img src="img/capa.jpg" alt="capa">
+                        </a>
+                    </div>
+                </div>
+                <div class="livros" id="content-processo">
+                    <div class="wrapper capa">
+                        <a href="#">
+                            <img src="img/capa.jpg" alt="capa">
+                        </a>
+                    </div>
+                    <div class="wrapper capa">
+                        <a href="#">
+                            <img src="img/capa.jpg" alt="capa">
+                        </a>
+                    </div>
+                    <div class="wrapper capa">
+                        <a href="#">
+                            <img src="img/capa.jpg" alt="capa">
+                        </a>
+                    </div>
+                    <div class="wrapper capa">
+                        <a href="#">
+                            <img src="img/capa.jpg" alt="capa">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="novo-livro">
+            <div class="content">
+                <select onchange="instrucoesChange(this.value)" name="tipo-livro" id="type-selector">
+                    <option value="0">--Selecione--</option>
+                    <option value="1">Conto</option>
+                    <option value="2">Quadrinho</option>
+                    <option value="3">AudioLivro</option>
+                </select>
+                <div id="instrucoes">
+                    <p id="instrucoes-text"></p>
+                </div>
+                <div class="button">
+                    <a href="#">ENVIAR</a>
+                </div>
+            </div>
+        </section>
+        <section id="meu-perfil">
+            <div class="content">
+                <p>CPF/CNPJ: xxx.xxx.xxx-xx</p>
+                <p>Email: exemplo@email.com</p>
+            </div>
+        </section>
+    </div>
+</body>
+<script src="java/script.js"></script>
+</html>

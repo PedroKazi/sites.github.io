@@ -39,6 +39,51 @@ function typeSelectCad(value) {
     }
 }
 
+function menuToggle() {
+    var menu = document.getElementById("nav-ul")
+    menu.classList.toggle('active')
+
+    if (menu.classList.contains('active')) {
+        document.getElementById('radio__dot').style.display = 'none';
+    } else {
+        document.getElementById('radio__dot').style.display = 'inline-flex';
+    }
+
+    var item1 = document.getElementById('nav-item1')
+    var item2 = document.getElementById('nav-item2')
+    var item3 = document.getElementById('nav-item3')
+
+    item1.classList.toggle('animate')
+    item2.classList.toggle('animate')
+    item3.classList.toggle('animate')
+}
+
+function meusLivrosOpt() {
+    var opt1 = document.getElementById('radio-meus-livros')
+    var opt2 = document.getElementById('radio-processo')
+
+    if (opt1.checked) {
+        document.getElementById('content-meus-livros').classList.toggle('active')
+        document.getElementById('content-processo').classList.remove('active')
+    } else {
+        document.getElementById('content-meus-livros').classList.remove('active')
+        document.getElementById('content-processo').classList.toggle('active')
+    }
+}
+
+function instrucoesChange(value) {
+    var desc = document.getElementById("instrucoes-text")
+    if (value == 0) {
+        desc.innerHTML = ''
+    } else if (value == 1) {
+        desc.innerHTML = 'Texto em docx ou PDF <br> Imagens sem transparência em .jpg <br> Imagens com transparência em .png'
+    } else if (value == 2) {
+        desc.innerHTML = 'Imagem em jpg de cada página sem e com as falas <br> Falas em um documento separado, podendo ser docx ou pdf'
+    } else if (value == 3) {
+        desc.innerHTML = 'Texto em docx ou PDF <br> Imagens sem transparência em .jpg <br> Imagens com transparência em .png <br> Audio em .mp3'
+    }
+}
+
 function setaVolta() {
     var login = document.getElementById("login-choice");
     var cadastro = document.getElementById("cadastro-choice");
