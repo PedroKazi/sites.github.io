@@ -92,6 +92,10 @@ function setaVolta() {
     cadastro.classList.remove('active')
 }
 
+function reprovar() {
+    
+}
+
 const section = document.querySelectorAll("section");
 
 const options = {

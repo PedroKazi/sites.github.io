@@ -18,12 +18,9 @@ body{
 
         section{
             height: 100vh;
-            padding-top: 70px;
-            height: calc(100vh - 70px);
         }
     }
     .button{
-        background-color: #e4c5e4;
         text-align: center;
         padding: .5rem;
         border-radius: 10px;
@@ -36,6 +33,36 @@ body{
             text-decoration: none;
             font-weight: bold;
         }
+    }
+    .button:hover{
+        background-color: #e4c5e4;
+        cursor: pointer;
+
+        transition: ease-in 300ms;
+    }
+    .aprove:hover{
+        background-color: #4AC25A;
+        cursor: pointer;
+
+        transition: ease-in 300ms;
+    }
+    .reject:hover{
+        background-color: #C24A69;
+        cursor: pointer;
+
+        transition: ease-in 300ms;
+    }
+    button{
+        border: none;
+        border-radius: 10px;
+        background-color: #f8f8f8;
+        font-weight: bold;
+    }
+    button:hover{
+        background-color: #e4c5e4;
+        cursor: pointer;
+
+        transition: ease-in 300ms;
     }
     
     #login-sect{
@@ -83,12 +110,6 @@ body{
                 }
                 select, input{
                     margin-bottom: 1rem;
-                }
-                button{
-                    border: none;
-                    border-radius: 10px;
-                    background-color: #e4c5e4;
-                    font-weight: bold;
                 }
 
                 .login-form{
@@ -149,6 +170,20 @@ body{
                     animation-fill-mode: forwards;
                 }
             }
+            #nav-ul-book{
+                width: auto;
+                position:initial;
+                display: flex;
+                align-items: center;
+                justify-content:space-evenly;
+                background-color: #f8f8f800;
+                height: auto;
+                .nav-item{
+                    padding: 0;
+                    margin: 0 1rem;
+                    transform: translateX(0);
+                }
+            }
             #nav-ul.active{
                 display: block;
             }
@@ -164,6 +199,10 @@ body{
             background-color: black;
             margin: 6px 0;
         }
+    }
+    #capa-book{
+        width: 50%;
+        margin: auto;
     }
 
     .content{
@@ -230,8 +269,12 @@ body{
     }
 
     #meus-livros{
+        padding-top: 70px;
+        height: calc(100vh - 70px);
     }
     #novo-livro{
+        padding-top: 70px;
+        height: calc(100vh - 70px);
 
         select{
             width: 100%;
@@ -241,6 +284,31 @@ body{
         }
     }
     #meu-perfil{
+        padding-top: 70px;
+        height: calc(100vh - 70px);
+    }
+
+    #analise{
+        padding-top: 70px;
+        height: calc(100vh - 70px);
+        #btn-analise{
+            width: 50%;
+        }
+    }
+    #comm{
+        padding-top: 70px;
+        height: calc(100vh - 70px);
+
+        .comment{
+            display: block;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+
+            p, textarea, button{
+                width: 100%;
+            }
+        }
     }
 
     .wrapper{
@@ -274,6 +342,19 @@ body{
             #content-meus-livros, #content-processo{
                 height: 60vh;
             }
+        }
+
+        #analise{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            #btn-analise{
+                width: 20%;
+            }
+        }
+        #capa-book{
+            width: 20%;
+            margin: 0;
         }
 
         #main-header{
@@ -321,6 +402,15 @@ body{
                 }
             }
         }
+        
+        #analise{
+            #btn-analise{
+                width: 25%;
+            }
+        }
+        #capa-book{
+            width: 25%;
+        }
 
         .content{
             .livros{
@@ -346,11 +436,24 @@ body{
             font-size: 1.3em;
         }
 
-        .container{
-            section{
-                padding-top: calc(70px + 2rem);
-                height: calc(100vh - 70px - 2rem);
+        #meus-livros{
+            padding-top: calc(70px + 2rem);
+            height: calc(100vh - 70px - 2rem);
+        }
+        #novo-livro{
+            padding-top: calc(70px + 2rem);
+            height: calc(100vh - 70px - 2rem);
+    
+            select{
+                width: 100%;
             }
+            p{
+                text-align: justify;
+            }
+        }
+        #meu-perfil{
+            padding-top: calc(70px + 2rem);
+            height: calc(100vh - 70px - 2rem);
         }
 
         .content{
@@ -386,11 +489,24 @@ body{
             font-size: 1.7em;
         }
 
-        .container{
-            section{
-                padding-top: calc(70px + 6rem);
-                height: calc(100vh - 70px - 6rem);
+        #meus-livros{
+            padding-top: calc(70px + 6rem);
+            height: calc(100vh - 70px - 6rem);
+        }
+        #novo-livro{
+            padding-top: calc(70px + 6rem);
+            height: calc(100vh - 70px - 6rem);
+    
+            select{
+                width: 100%;
             }
+            p{
+                text-align: justify;
+            }
+        }
+        #meu-perfil{
+            padding-top: calc(70px + 6rem);
+            height: calc(100vh - 70px - 6rem);
         }
 
         .content{
