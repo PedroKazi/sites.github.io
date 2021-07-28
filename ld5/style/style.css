@@ -503,10 +503,13 @@ body .wrapper img {
 
 @media screen and (min-width: 1200px) {
   body {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   body select, body button, body input {
-    font-size: 1.3em;
+    font-size: 1.2em;
+  }
+  body #main-logo {
+    width: 80%;
   }
   body #meus-livros {
     padding-top: calc(70px + 2rem);
@@ -549,13 +552,13 @@ body .wrapper img {
 
 @media screen and (min-width: 1900px) {
   body {
-    font-size: 2em;
+    font-size: 1.7em;
   }
   body .button {
     padding: 1.5rem;
   }
   body button, body input, body select, body svg {
-    font-size: 1.7em;
+    font-size: 1.4em;
   }
   body #meus-livros {
     padding-top: calc(70px + 6rem);
@@ -593,7 +596,7 @@ body .wrapper img {
     width: 100%;
   }
   body #comm .comment textarea {
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
   body .content .livros {
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
