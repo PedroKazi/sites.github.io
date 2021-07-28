@@ -3,6 +3,7 @@
 *{
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 1em;
 }
 body{
     margin: 0;
@@ -430,10 +431,8 @@ body{
 }
 @media screen and (min-width: 1200px) {
     body{
-        font-size: 1.2em;
 
         select, button, input{
-            font-size: 1.2em;
         }
 
         #main-logo{
@@ -493,13 +492,11 @@ body{
 }
 @media screen and (min-width: 1900px) {
     body{
-        font-size: 1.7em;
         .button{
             padding: 1.5rem;
         }
 
         button, input, select, svg{
-            font-size: 1.4em;
         }
 
         #meus-livros{
@@ -540,7 +537,6 @@ body{
                     width: 100%;
                 }
                 textarea{
-                    font-size: 1.5em;
                 }
             }
         }
