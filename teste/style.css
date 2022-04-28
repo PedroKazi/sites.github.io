@@ -1,0 +1,187 @@
+:root {
+  --color1: #f4f4f4;
+  --color2: #111111;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("img/bg_mobile.jpg");
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 150%;
+  background-color: var(--color2);
+}
+
+.screen {
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.screen__header {
+  height: 50vh;
+  margin: 0;
+}
+
+.screen__header .header__title, .screen__header .header__subtitle {
+  margin: 0;
+  color: var(--color1);
+  font-weight: normal;
+  font-size: 1.5em;
+}
+
+.screen__header .header__title {
+  letter-spacing: 2px;
+}
+
+.screen__header .header__subtitle {
+  font-size: 1.2em;
+}
+
+.nav__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.nav__links .nav__link {
+  padding: 8px;
+  font-size: 1.6em;
+  fill: var(--color1);
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 20px;
+}
+
+.content .content__books, .content .content__videos {
+  margin-bottom: 30px;
+}
+
+.content .content__title {
+  color: var(--color1);
+  margin: 0;
+}
+
+.content .books__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.content .books__list .header__book {
+  color: var(--color1);
+  text-decoration: none;
+  font-size: 1em;
+  padding: 5px;
+}
+
+.content .content__sep {
+  border: 2px solid var(--color1);
+}
+
+.content .video {
+  color: var(--color1);
+}
+
+.content .video .video__title {
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.content .video .video__container {
+  width: 100%;
+}
+
+.content .video .video__container iframe {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .screen__header .header__title {
+    font-size: 3em;
+  }
+  .screen__header .header__subtitle {
+    font-size: 2.5em;
+  }
+  .screen .nav__links .nav__link {
+    padding: 0 15px;
+    font-size: 2.5em;
+  }
+  .content__books .content__title, .content__videos .content__title {
+    font-size: 2.5em;
+  }
+  .content__books .books__list .header__book, .content__videos .books__list .header__book {
+    font-size: 1.5em;
+  }
+  .content__books .video .video__title, .content__videos .video .video__title {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-size: 100%;
+    background-image: url("img/clemente.jpg");
+  }
+  .parallax__wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .content {
+    padding: 20px 200px;
+  }
+  .content .video__container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  .content .video__container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .screen {
+    height: calc(100vh - 20px);
+    padding: 20px 200px 0;
+    position: relative;
+  }
+  .screen .nav__links {
+    position: absolute;
+    right: 200px;
+    bottom: 20px;
+  }
+  .screen .nav__links .nav__link {
+    padding: 0 10px;
+    font-size: 2.5em;
+  }
+  .screen__header {
+    height: auto;
+  }
+  .screen__header .header__title {
+    font-size: 3.5em;
+  }
+  .screen__header .header__subtitle {
+    font-size: 2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
