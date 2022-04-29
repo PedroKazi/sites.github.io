@@ -3,12 +3,9 @@
   --color2: #111111;
 }
 
-* {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
   background-image: url("img/bg_mobile.jpg");
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   background-repeat: no-repeat;
   background-position: center top;
@@ -26,18 +23,19 @@ body {
   margin: 0;
 }
 
-.screen__header .header__title, .screen__header .header__subtitle {
+.screen__header .header__title {
   margin: 0;
   color: var(--color1);
   font-weight: normal;
   font-size: 1.5em;
-}
-
-.screen__header .header__title {
   letter-spacing: 2px;
 }
 
 .screen__header .header__subtitle {
+  margin: 0;
+  color: var(--color1);
+  font-weight: normal;
+  font-size: 1.5em;
   font-size: 1.2em;
 }
 
@@ -46,8 +44,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
 }
 
 .nav__links .nav__link {
@@ -62,7 +60,7 @@ body {
   padding: 20px;
 }
 
-.content .content__books, .content .content__videos {
+.content .content__books, .content .content__videos, .content .content__musicas {
   margin-bottom: 30px;
 }
 
@@ -77,18 +75,29 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .content .books__list .header__book {
-  color: var(--color1);
-  text-decoration: none;
-  font-size: 1em;
-  padding: 5px;
+  padding: 8px;
+  font-size: 1.6em;
+  fill: var(--color1);
+}
+
+.content .musicas__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .musicas__list .musicas__link {
+  padding: 8px;
+  font-size: 1.6em;
+  fill: var(--color1);
 }
 
 .content .content__sep {
@@ -120,17 +129,28 @@ body {
     font-size: 2.5em;
   }
   .screen .nav__links .nav__link {
+    padding: 15px;
+    font-size: 2.5em;
+  }
+  .content__books .content__title {
+    font-size: 2.5em;
+  }
+  .content__books .books__list .header__book {
+    padding: 15px;
+    font-size: 2.5em;
+  }
+  .content__videos .content__title {
+    font-size: 2.5em;
+  }
+  .content__videos .video .video__title {
+    font-size: 1.5em;
+  }
+  .content__musicas .content__title {
+    font-size: 2.5em;
+  }
+  .content__musicas .musicas__list .musicas__link {
     padding: 0 15px;
     font-size: 2.5em;
-  }
-  .content__books .content__title, .content__videos .content__title {
-    font-size: 2.5em;
-  }
-  .content__books .books__list .header__book, .content__videos .books__list .header__book {
-    font-size: 1.5em;
-  }
-  .content__books .video .video__title, .content__videos .video .video__title {
-    font-size: 1.5em;
   }
 }
 
@@ -159,6 +179,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  .content .musicas__list .musicas__link {
+    padding: 10px;
+    font-size: 2.5em;
+  }
+  .content .books__list .header__book {
+    padding: 10px;
+    font-size: 2.5em;
   }
   .screen {
     height: calc(100vh - 20px);
