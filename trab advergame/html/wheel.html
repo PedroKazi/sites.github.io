@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike Wheel</title>
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo_wrapper">
+        <img src="../img/nikelogo.svg" alt="logo">
+      </div>
+      <nav class="login">
+        <a href="shop.html">
+          <div class="user_wrapper">
+            <img src="../img/user.svg" alt="user">
+          </div>
+          <p>fulano</p>
+        </a>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div id="jdi">
+        <p>Just Do It</p>
+      </div>
+      <div class="container" id="wheel_cont">
+        <canvas id="wheel"></canvas>
+        <button id="spin-btn">Girar</button>
+        <img id="arrow" src="../img/arrow.svg" alt="spinner-arrow"/>
+      </div>
+      <div id="final-value">
+        <p>Clique no botão de Girar para começar</p>
+      </div>
+    </div>
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- Chart JS Plugin for displaying text over chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+    <!-- Script -->
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>

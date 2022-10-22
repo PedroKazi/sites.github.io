@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #4e4e4e);
+  }
+  #credit {
+    position: absolute;
+    bottom: 0;
+  }
+  header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 2em;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+  }
+  header :hover{
+    cursor: pointer;
+  }
+  .login {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 15%;
+    font-size: 1.5em;
+  }
+  .login a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px;
+  }
+  .login a:hover {
+    background-color: #cacaca;
+  }
+  .logo_wrapper {
+    width: 5%;
+    display: flex;
+    align-items: center;
+  }
+  .logo_wrapper img{
+    width: 100%;
+  }
+  .user_wrapper {
+    width: 15%;
+    display: flex;
+    align-items: center;
+  }
+  .user_wrapper img{
+    width: 100%;
+  }
+  .wrapper {
+    width: 90%;
+    max-width: 34.37em;
+    max-height: 90vh;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 0 4em 5em rgba(27, 8, 53, 0.2);
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  #wheel {
+    max-height: inherit;
+    width: inherit;
+    top: 0;
+    padding: 0;
+  }
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  #spin-btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 26%;
+    width: 26%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0;
+    background: radial-gradient(#000000 50%, #000000 85%);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+  }
+  #arrow {
+    position: absolute;
+    width: 4em;
+    top: 45%;
+    right: -8%;
+    transform: scale(-1, 1);
+  }
+  #final-value {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1.5em;
+    color: #202020;
+    font-weight: 500;
+  }
+  #jdi {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+    color: #202020;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      font-size: 12px;
+    }
+    img {
+      right: -5%;
+    }
+  }

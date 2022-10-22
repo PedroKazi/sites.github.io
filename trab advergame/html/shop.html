@@ -1,0 +1,113 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/shop.css">
+    <script src="../scripts/shop.js"></script>
+    <title>Nike - Loja</title>
+</head>
+<body onload="load()">
+    <div class="transparent" id="alert1">
+        <div class="alert">
+            <div id="sad">
+                <img src="../img/sad.svg" alt="sad">
+            </div>
+            <h1>moedas insuficientes</h1>
+            <button onclick="alertUpdate('alert1')">voltar</button>
+          </div>
+      </div>
+      <div class="transparent" id="alert2">
+        <div class="alert">
+            <div id="sad">
+                <img src="../img/cart.svg" alt="sad">
+            </div>
+            <h1>produto adicionado ao carrinho</h1>
+            <button onclick="alertUpdate('alert2')">voltar</button>
+          </div>
+      </div>
+    <header>
+        <div class="logo_wrapper">
+          <img src="../img/nikelogo.svg" alt="logo">
+        </div>
+        <nav class="login">
+            <a href="wheel.html">
+                <p>Nike Wheel</p>
+                <div id="wheel_svg">
+                    <img src="../img/wheel.svg" alt="wheel">
+                </div>
+            </a>
+        </nav>
+      </header>
+      <div class="shop">
+        <div id="coins">
+            <div id="coin_icon">
+                <img src="../img/nikecoin.svg" alt="nike coin">
+            </div>
+            <p id="amount">100</p>
+        </div>
+        <div class="items">
+            <div class="row">
+                <div class="wrapper" onclick="checkValue('p1')">
+                    <img class="imghover" src="../img/items/img5.jpg" alt="item">
+                    <img src="../img/items/img6.jpg" alt="item">
+                    <p id="p1">100</p>
+                </div>
+                <div class="wrapper" onclick="checkValue('p2')">
+                    <img class="imghover" src="../img/items/img1.jpg" alt="item">
+                    <img src="../img/items/img2.jpg" alt="item">
+                    <p id="p2">200</p>
+                </div>
+                <div class="wrapper" onclick="checkValue('p3')">
+                    <img class="imghover" src="../img/items/img7.jpg" alt="item">
+                    <img src="../img/items/img8.jpg" alt="item">
+                    <p id="p3">300</p>
+                </div>
+                <div class="wrapper" onclick="checkValue('p4')">
+                    <img class="imghover" src="../img/items/img11.jpg" alt="item">
+                    <img src="../img/items/img12.jpg" alt="item">
+                    <p id="p4">400</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="wrapper" onclick="checkValue('p5')">
+                    <img class="imghover" src="../img/items/img3.jpg" alt="item">
+                    <img src="../img/items/img4.jpg" alt="item">
+                    <p id="p5">100</p>
+                </div>
+                <div class="wrapper" onclick="checkValue('p6')">
+                    <img class="imghover" src="../img/items/img9.jpg" alt="item">
+                    <img src="../img/items/img10.jpg" alt="item">
+                    <p id="p6">100</p>
+                </div>
+                <div class="wrapper" onclick="checkValue('p7')">
+                    <img src="../img/500x500_placeholder.jpg" alt="item">
+                    <p id="p7">100</p>
+                </div>
+                <div class="wrapper" onclick="checkValue('p8')">
+                    <img src="../img/500x500_placeholder.jpg" alt="item">
+                    <p id="p8">100</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="wrapper" onclick="checkValue('p9')">
+                    <img src="../img/500x500_placeholder.jpg" alt="item">
+                    <p id="p9">100</p>
+                </div>
+                <div class="wrapper" onclick="checkValue('p10')">
+                    <img src="../img/500x500_placeholder.jpg" alt="item">
+                    <p id="p10">100</p>
+                </div>
+                <div class="wrapper" onclick="checkValue('p11')">
+                    <img src="../img/500x500_placeholder.jpg" alt="item">
+                    <p id="p11">100</p>
+                </div>
+                <div class="wrapper" onclick="checkValue('p12')">
+                    <img src="../img/500x500_placeholder.jpg" alt="item">
+                    <p id="p12">100</p>
+                </div>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
