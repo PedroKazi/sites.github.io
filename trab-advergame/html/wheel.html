@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body>
+    <div class="transparent" id="alert1">
+      <div class="notice">
+        <h1>Seu resultado foi:</h1>
+        <p id="final-value">10</p>
+        <button onclick="alertUpdate('alert1')">Voltar</button>
+      </div>
+    </div>
     <header>
       <div class="logo_wrapper">
         <img src="../img/nikelogo.svg" alt="logo">
@@ -33,9 +40,6 @@
         <canvas id="wheel"></canvas>
         <button id="spin-btn">Girar</button>
         <img id="arrow" src="../img/arrow.svg" alt="spinner-arrow"/>
-      </div>
-      <div id="final-value">
-        <p>Clique no botão de Girar para começar</p>
       </div>
     </div>
     <!-- Chart JS -->

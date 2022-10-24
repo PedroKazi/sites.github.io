@@ -15,22 +15,35 @@
             </div>
             <h1>moedas insuficientes</h1>
             <button onclick="alertUpdate('alert1')">voltar</button>
-          </div>
-      </div>
-      <div class="transparent" id="alert2">
-        <div class="alert">
-            <div id="sad">
-                <img src="../img/cart.svg" alt="sad">
-            </div>
+        </div>
+    </div>
+    <div class="transparent" id="alert2">
+    <div class="alert">
+        <div id="sad">
+            <img src="../img/cart.svg" alt="sad">
+        </div>
             <h1>produto adicionado ao carrinho</h1>
             <button onclick="alertUpdate('alert2')">voltar</button>
-          </div>
-      </div>
+        </div>
+    </div>
+    <div class="transparent" id="alert3">
+        <div class="checkout">
+            <div class="itemscreen" id="checkoutscreen">
+            </div>
+            <div class="buttons">
+                <button onclick="alertUpdate('alert3')" id="voltar">voltar</button>
+                <button id="comprar">comprar</button>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="logo_wrapper">
           <img src="../img/nikelogo.svg" alt="logo">
         </div>
-        <nav class="login">
+        <nav class="login"> 
+            <div onclick="cart()" class="cart">
+                <img src="../img/cart-out.svg" alt="check out">
+            </div>
             <a href="wheel.html">
                 <p>Nike Wheel</p>
                 <div id="wheel_svg">

@@ -125,6 +125,37 @@
     color: #202020;
     font-weight: 500;
   }
+  .transparent {
+    visibility: hidden;
+    z-index: 5;
+    position: absolute;
+    background-color: #4e4e4e8e;
+    width: 100vw;
+    height: 100vh;
+  }
+  .notice {
+    position: absolute;
+    background-color: #f4f4f4;
+    width: 30%;
+    top: 25%;
+    left: 35%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  .notice button {
+    width: 50%;
+    font-size: 2em;
+    margin-top: 20px;
+    border: none;
+    background-color: #cacaca;
+    border-radius: 5px;
+  }
+  #final-value {
+    font-size: 5em;
+    margin: 0;
+    padding: 0;
+  }
   @media screen and (max-width: 768px) {
     .wrapper {
       font-size: 12px;

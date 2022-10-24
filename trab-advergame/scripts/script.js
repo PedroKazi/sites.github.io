@@ -2,6 +2,7 @@ const wheel = document.getElementById("wheel");
 const spinBtn = document.getElementById("spin-btn");
 const finalValue = document.getElementById("final-value");
 const container = document.getElementById("wheel_cont");
+const alert = document.getElementById("alert1");
 const set = [10, 10, 10, 10, 20, 20, 20, 30, 30, 40];
 var spin_datas = [];
 var slices = [];
@@ -19,6 +20,10 @@ function arrowprize(set) {
     arrowP = set[rndm];
     slices.push(set[rndm]);
     return set[rndm];
+}
+
+function alertUpdate(id) {
+  document.getElementById(id).style.visibility = "hidden";
 }
 
 const rotationValues = [
@@ -82,7 +87,8 @@ const valueGenerator = (angleValue) => {
   for (let i of rotationValues) {
     //if the angleValue is between min and max then display it
     if (angleValue >= i.minDegree && angleValue <= i.maxDegree) {
-      finalValue.innerHTML = `<p>Resultado: ${i.value}</p>`;
+      finalValue.innerHTML = `${i.value}`;
+      alert.style.visibility = "visible";
       spinBtn.disabled = false;
       break;
     }
