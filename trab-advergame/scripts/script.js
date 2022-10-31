@@ -113,6 +113,7 @@ spinBtn.addEventListener("click", () => {
     spinBtn.disabled = true;
     finalValue.innerHTML = `<p>Você ja rodou hoje!</p>`;
   } else {
+    document.getElementById("audiospin").play();
     spin_datas.push(today);
     spinBtn.disabled = true;
     //Empty final value
